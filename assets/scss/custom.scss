@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Gotham Narrow';
+    src: url('../webfonts/GothamNarrow-Light.woff2') format('woff2'),
+        url('../webfonts/GothamNarrow-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Narrow';
+    src: url('../webfonts/GothamNarrow-Bold.woff2') format('woff2'),
+        url('../webfonts/GothamNarrow-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Narrow';
+    src: url('../webfonts/GothamNarrow-Thin.woff2') format('woff2'),
+        url('../webfonts/GothamNarrow-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Narrow';
+    src: url('../webfonts/GothamNarrow-Medium.woff2') format('woff2'),
+        url('../webfonts/GothamNarrow-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Narrow Book';
+    src: url('../webfonts/GothamNarrow-Book.woff2') format('woff2'),
+        url('../webfonts/GothamNarrow-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+
+
+// Configuration 
+@import "global/functions";
+@import "global/variables";
+
+/*!
+ * Bootstrap v5.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+// scss-docs-start import-stack
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// custom file import
+@import "layout/header.scss";
+@import "layout/banner.scss";
+@import "layout/buttons.scss";
+@import "layout/footer.scss";
+@import "layout/common.scss";
+@import "pages/home.scss";
+@import "pages/about.scss";
+@import "pages/services.scss";
+@import "pages/contact.scss";
+@import "layout/modal.scss";

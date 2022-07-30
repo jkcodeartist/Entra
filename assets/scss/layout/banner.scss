@@ -1,0 +1,184 @@
+.sliderContainer {
+    position: relative;
+    overflow: hidden;
+
+
+
+    &.inner-banner {
+        .item {
+            &::before {
+                background: rgba($dark-text, .60);
+                display: block;
+            }
+        }
+    }
+
+    .item {
+        position: relative;
+
+        img {
+            max-width: 100%;
+        }
+
+        .title {
+            font-size: 100px;
+            max-width: 700px;
+            line-height: 90px;
+
+            @include media-breakpoint-down(xl) {
+                font-size: 50px;
+                line-height: normal;
+            }
+
+            @include media-breakpoint-down(md) {
+                font-size: 30px;
+            }
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: rgba($dark-text, .30);
+
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+        }
+    }
+
+
+    .slick-dots {
+        display: none;
+
+        @include media-breakpoint-down(md) {
+            display: block;
+            bottom: -60px;
+
+            li {
+
+                button {
+                    background: $border-grey;
+                }
+
+                &.slick-active {
+                    button {
+                        background: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+.progressBarContainer {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    @include media-breakpoint-down(lg) {
+        bottom: 30px;
+    }
+
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
+}
+
+
+.thumb-progressbar {
+    display: flex;
+
+    >div {
+        margin-right: 40px;
+        color: #AAAAAA;
+        cursor: pointer;
+    }
+}
+
+.thumb-progressbar div:last-child {
+    margin-right: 0;
+}
+
+.thumb-progressbar div span.progressBar {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: block;
+}
+
+.thumb-progressbar div span.progressBar .inProgress {
+    background-color: $primary;
+    width: 0%;
+    height: 2px;
+}
+
+
+.banner-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    color: $white;
+
+    @include media-breakpoint-down(md) {
+        position: initial;
+        background: $primary;
+        z-index: 11;
+        padding-bottom: 50px;
+    }
+
+    .btn {
+        min-height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 55px;
+        text-transform: uppercase;
+
+        @include media-breakpoint-down(lg) {
+            min-height: 50px;
+            padding: 10px 30px;
+        }
+
+        @include media-breakpoint-down(md) {
+            border: 1px solid $white;
+        }
+    }
+}
+
+.thumb {
+    display: inline-flex;
+    flex-direction: column;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+
+    p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 16px;
+        max-width: 180px;
+        font-weight: normal;
+    }
+}
