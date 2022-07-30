@@ -1,0 +1,66 @@
+body {
+  @media only screen and (max-width: $desktop-1600) {
+    font-size: 1rem;
+  }
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a,
+a:active,
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .15s ease-in-out;
+}
+
+p {
+  line-height: 23px;
+}
+
+input,
+button {
+  outline: none;
+  transition: all .15s ease-in-out;
+}
+
+section {
+  padding: 90px 0 120px;
+  position: relative;
+
+  @include media-breakpoint-down(xl) {
+    padding: 50px 0;
+  }
+}
+
+.container {
+  max-width: 1576px;
+
+  @media only screen and (min-width: $desktop-1921) {
+    max-width: 2200px;
+  }
+
+  @media only screen and (max-width: $desktop-1600) {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 0 15px;
+  }
+}
+
+.full-container {
+  max-width: 100%;
+}
