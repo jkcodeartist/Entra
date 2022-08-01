@@ -1,0 +1,15 @@
+.btn {
+    color: $white;
+    border-radius: 5px;
+    box-shadow: none;
+    min-height: 50px;
+    font-size: 18px;
+    line-height: 22px;
+
+    &:focus,
+    &:hover {
+        box-shadow: none;
+        outline: none;
+        color: $white;
+    }
+}

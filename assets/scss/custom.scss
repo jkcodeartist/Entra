@@ -1,16 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 @import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
 
 
 // Configuration 
 @import "global/functions";
 @import "global/variables";
-
-/*!
- * Bootstrap v5.1.3 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 
 // scss-docs-start import-stack
 
@@ -21,6 +15,7 @@
 @import "layout/modal";
 
 // custom file import
-@import "layout/header"; 
+@import "layout/header";
 @import "layout/footer";
-@import "pages/dashboard"; 
+@import "layout/auth";
+@import "pages/dashboard";
