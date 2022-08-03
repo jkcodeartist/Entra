@@ -19,7 +19,6 @@ a:active,
 a:hover,
 a:focus,
 a:visited {
-  color: $brandCol;
   text-decoration: none;
   cursor: pointer;
   transition: all .15s ease-in-out;
@@ -153,5 +152,16 @@ button {
 .mobw-100 {
   @include media-breakpoint-down(md) {
     width: 100%;
+  }
+}
+
+.dropdown-toggle {
+  &::after {
+    border: solid $white;
+    border-width: 0 2px 2px 0px;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
   }
 }

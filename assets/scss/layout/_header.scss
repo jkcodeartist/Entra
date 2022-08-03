@@ -1,0 +1,180 @@
+header {
+    background: $blackGreyCol;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    min-height: 80px;
+
+    .navbar-brand {
+        display: inline-flex;
+        max-width: 145px;
+        margin-right: 70px;
+    }
+}
+
+.userDropdown {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    padding-left: 20px;
+    min-height: 50px;
+    border-left: 1px solid $darkGreyCol;
+
+    .userDetail {
+        color: $white;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        font-weight: 700;
+
+        img {
+            width: 36px;
+            height: 36px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        p {
+            color: $medSecGreyCol;
+            font-weight: 400;
+        }
+    }
+}
+
+.bellNotification {
+    margin-left: 30px;
+
+    .dropdown-toggle {
+        position: relative;
+
+        span {
+            position: absolute;
+            top: 10px;
+            right: -12px;
+            background: $red;
+            color: $white;
+            font-size: 12px;
+            height: 21px;
+            width: 21px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .dropdown-menu {
+        padding: 0;
+
+        .title {
+            font-size: 18px;
+            text-transform: capitalize;
+            padding: 10px 15px;
+            border-bottom: 1px solid $border-color;
+            text-align: center;
+        }
+
+        ul {
+            li {
+                .dropdown-item {
+                    font-size: 1rem;
+                    padding: 10px 15px;
+                    border-bottom: 1px solid #eee;
+                    color: $medGreyCol;
+                    text-overflow: ellipsis;
+                    max-width: 350px;
+                    overflow: hidden;
+                }
+            }
+        }
+
+        .btn-viewAll {
+            padding: 10px 15px;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}
+
+.navbar_right {
+    display: flex;
+    align-items: center;
+
+    .dropdown-toggle::after {
+        display: none;
+    }
+
+    .dropdown-toggle {
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .dropdown-menu {
+        margin-top: 13px !important;
+        border: 0;
+        border-radius: 0;
+        font-size: 14px;
+        box-shadow: 0 3px 10px rgba($black, 0.15);
+    }
+
+}
+
+.searchUsers {
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+
+    .userList {
+        display: flex;
+        margin-right: 30px;
+
+        * {
+            margin-right: -6px;
+        }
+
+        img {
+            height: 36px;
+            width: 36px;
+        }
+
+        a {
+            display: flex;
+        }
+
+        div {
+            height: 36px;
+            width: 36px;
+            background: $greyCol;
+            color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+    }
+}
+
+.search-control {
+    position: relative;
+    margin-right: 50px;
+
+    input {
+        background:$greyCol url("#{$bgimage-path}search.svg") no-repeat left 15px center;
+        border: 1px solid $greyCol;
+        color: $white;
+        font-size: 14px;
+        padding: 0.5rem 15px;
+        padding-left: 50px;
+        min-height: 40px;
+        border-radius: 3px;
+        width: 340px;
+        transition: all 0.15s ease-in-out;
+
+        &:focus {
+            border-color: $darkGreyCol;
+        }
+    }
+}

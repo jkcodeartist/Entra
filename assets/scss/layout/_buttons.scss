@@ -12,4 +12,9 @@
         outline: none;
         color: $white;
     }
+
+    &.btn-sm {
+        min-height: 30px;
+        font-size: 1rem;
+    }
 }
