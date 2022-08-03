@@ -11,6 +11,10 @@ header {
         display: inline-flex;
         max-width: 145px;
         margin-right: 70px;
+
+        @include media-breakpoint-down(xxl) {
+            margin-right: 20px;
+        }
     }
 }
 
@@ -175,6 +179,10 @@ header {
 
         &:focus {
             border-color: $darkGreyCol;
+        }
+
+        @include media-breakpoint-down(xxl) {
+            width: 250px;
         }
     }
 }
