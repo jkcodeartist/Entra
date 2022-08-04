@@ -3,6 +3,13 @@ aside {
     min-width: 30px;
     width: 130px;
     height: 100%;
+    overflow: auto;
+    max-height: 100%;
+    border-right: 1px solid $border-color;
+
+    @include media-breakpoint-down(xxl) {
+        min-width: 100px;
+    }
 
     a {
         min-height: 90px;
@@ -13,11 +20,15 @@ aside {
         font-size: 14px;
         color: $medSecGreyCol;
         font-weight: 500;
-        border-left: 3px solid $white;
+        border-left: 3px solid transparent;
         border-bottom: 1px solid $border-color;
 
-        img {
+        img,
+        i {
+            line-height: 25px;
+            color: $body-color;
             margin-bottom: 12px;
+            font-size: 30px;
             opacity: 0.5;
             transition: all .15s ease-in-out;
         }
@@ -43,12 +54,22 @@ aside {
 main {
     height: calc(100% - 80px);
     display: flex;
+
+    >.control-panel {
+        @include media-breakpoint-down(xl) {
+            display: none !important;
+        }
+    }
 }
 
 .control-panel {
     width: 380px;
     background: $white;
     height: 100%;
+
+    @include media-breakpoint-down(xxl) {
+        min-width: 300px;
+    }
 
     .heading {
         min-height: 60px;
@@ -95,6 +116,7 @@ main {
             border: 0;
             border-radius: 3px !important;
             margin-bottom: 2px;
+            font-size: 14px;
 
             span {
                 color: $medSecGreyCol;
@@ -131,12 +153,20 @@ main {
 
     .heading {
         margin-bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         .title {
             font-size: 18px;
         }
     }
 
+}
+
+.main-content {
+    overflow: auto;
+    max-height: calc(100% - 40px);
 }
 
 .main-wrapper {
@@ -150,7 +180,12 @@ main {
     column-gap: 15px;
     row-gap: 15px;
 
+    @include media-breakpoint-down(xxl) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
     a {
+        font-size: 14px;
         height: 180px;
         padding: 15px;
         text-align: center;
@@ -170,5 +205,17 @@ main {
             margin-top: 18px;
             color: $body-color;
         }
+    }
+}
+
+.content-wrap {
+    display: none;
+
+    @include media-breakpoint-down(xl) {
+        display: block;
+    }
+
+    .heading {
+        margin-bottom: 0;
     }
 }

@@ -64,6 +64,23 @@
         <div class="searchUsers">
           <div class="form-group search-control">
             <input type="text" placeholder="Search here…">
+            <a href="#search">
+              <img src="assets/images/search.svg" alt="">
+            </a>
+            <!-- RESPONSIVE SEARCH -->
+            <div id="search-box">
+              <div class="container">
+                <a class="close" href="#close"></a>
+                <div class="search-main">
+                  <div class="search-inner">
+                    <input type="text" id="inputSearch" name="firstname" placeholder="Search ">
+                    <button>
+                      <img src="assets/images/search.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="userList">
             <a href="#">
@@ -98,7 +115,7 @@
               <li><a class="dropdown-item" href="#">Cras blandit sapien nec vestibulum condimentum </a></li>
             </ul>
             <div class="title btn-viewAll">
-              <a href="#">View All </a>
+              <a href="#">View All Notifications </a>
             </div>
           </div>
         </div>
@@ -114,19 +131,28 @@
           </a>
 
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <!-- item-->
+            <h6 class="dropdown-header">Welcome Aldosari!</h6>
+            <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i>
+              <span class="align-middle">Profile</span></a>
+            <a class="dropdown-item" href="#"><i
+                class="mdi mdi-message-text-outline text-muted fs-16 align-middle me-1"></i> <span
+                class="align-middle">Messages</span></a>
+            <a class="dropdown-item" href="#"><i class="mdi mdi-lifebuoy text-muted fs-16 align-middle me-1"></i> <span
+                class="align-middle">Help</span></a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><i class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i>
+              <span class="align-middle">Settings</span></a>
+            <a class="dropdown-item" href="#"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span
+                class="align-middle" data-key="t-logout">Logout</span></a>
           </ul>
         </div>
 
       </div>
 
     </header>
+
+
 
     <main>
 
@@ -155,6 +181,35 @@
           <img src="assets/images/history.svg" alt="">
           <span>History</span>
         </a>
+        <div class="d-xl-none">
+          <a href="#">
+            <i class="mdi mdi-home-outline"></i>
+            <span>Home</span>
+          </a>
+          <div>
+            <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+              aria-controls="collapseExample">
+              <i class="mdi mdi-briefcase-outline"></i>
+              Workspaces
+            </a>
+            <div class="collapse" id="collapseExample">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </div>
+          </div>
+          <a href="#">
+            <i class="mdi mdi-account-multiple-outline"></i>
+            <span>Role</span>
+          </a>
+          <a href="#">
+            <i class="mdi mdi-file-chart-outline"></i>
+            <span>Reports</span>
+          </a>
+        </div>
       </aside>
 
       <div class="control-panel">
@@ -194,6 +249,15 @@
         <div class="contentPanel">
           <div class="heading">
             <h2 class="title">API Connectors</h2>
+            <div class="dropdown content-wrap">
+              <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Connector’s
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <div class="control-panel-load"> </div>
+              </div>
+            </div>
           </div>
           <div class="main-content">
             <div class="list-unstyled apiListCard">
