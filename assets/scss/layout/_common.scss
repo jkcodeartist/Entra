@@ -1,6 +1,10 @@
 html,
 body {
   height: 100%;
+
+  @include media-breakpoint-down(md) {
+    height: auto !important;
+  }
 }
 
 ul,

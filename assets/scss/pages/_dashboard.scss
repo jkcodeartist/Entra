@@ -11,6 +11,21 @@ aside {
         min-width: 100px;
     }
 
+    @include media-breakpoint-down(md) {
+        position: fixed;
+        max-height: calc(100vh - 65px);
+        left: -100%;
+        top: 65px;
+        transition: all .15s ease-in-out;
+        z-index: 99999;
+        box-shadow: 0 10px 20px rgba($black, .2);
+
+        &.open {
+            left: 0;
+        }
+    }
+
+
     a {
         min-height: 90px;
         display: flex;
@@ -51,9 +66,19 @@ aside {
     }
 }
 
+.wrapper {
+    @include media-breakpoint-down(md) {
+        height: auto !important;
+    }
+}
+
 main {
     height: calc(100% - 80px);
     display: flex;
+
+    @include media-breakpoint-down(md) {
+        height: auto;
+    }
 
     >.control-panel {
         @include media-breakpoint-down(xl) {
@@ -69,6 +94,11 @@ main {
 
     @include media-breakpoint-down(xxl) {
         min-width: 300px;
+    }
+
+    @include media-breakpoint-down(md) {
+        min-width: 300px;
+        width: 100%;
     }
 
     .heading {
@@ -182,6 +212,14 @@ main {
 
     @include media-breakpoint-down(xxl) {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include media-breakpoint-down(lg) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include media-breakpoint-down(md) {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     a {

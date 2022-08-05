@@ -11,6 +11,13 @@ header {
         padding: 0px 15px;
     }
 
+    @include media-breakpoint-down(md) {
+        min-height: 65px;
+        position: sticky;
+        top: 0;
+        z-index: 99999;
+    }
+
     .navbar-brand {
         display: inline-flex;
         max-width: 145px;
@@ -18,6 +25,10 @@ header {
 
         @include media-breakpoint-down(xxl) {
             margin-right: 20px;
+        }
+
+        @include media-breakpoint-down(md) {
+            max-width: 130px;
         }
     }
 
@@ -51,6 +62,15 @@ header {
             }
         }
     }
+
+    .burgermenu {
+        display: none;
+
+        @include media-breakpoint-down(md) {
+            display: block !important;
+        }
+    }
+
 }
 
 .userDropdown {
@@ -60,6 +80,11 @@ header {
     padding-left: 20px;
     min-height: 50px;
     border-left: 1px solid $darkGreyCol;
+
+    @include media-breakpoint-down(md) {
+        padding-left: 0;
+        border: 0;
+    }
 
     .userDetail {
         color: $white;
@@ -82,6 +107,10 @@ header {
 
             @include media-breakpoint-down(xxl) {
                 margin-right: 10px;
+            }
+
+            @include media-breakpoint-down(md) {
+                margin-right: 0;
             }
         }
 
@@ -108,13 +137,19 @@ header {
             right: -12px;
             background: $red;
             color: $white;
-            font-size: 12px;
-            height: 21px;
-            width: 21px;
+            font-size: 10px;
+            height: 17px;
+            width: 17px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        @include media-breakpoint-down(md) {
+            img {
+                height: 18px;
+            }
         }
     }
 
@@ -139,6 +174,11 @@ header {
                     text-overflow: ellipsis;
                     max-width: 350px;
                     overflow: hidden;
+
+                    @include media-breakpoint-down(md) {
+                        max-width: 100%;
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -171,6 +211,10 @@ header {
         border-radius: 0;
         font-size: 14px;
         box-shadow: 0 3px 10px rgba($black, 0.15);
+
+        @include media-breakpoint-down(md) {
+            margin-top: 5px !important;
+        }
     }
 
 }
@@ -262,6 +306,11 @@ a[href="#search"] {
 
     @include media-breakpoint-down(xl) {
         display: block;
+
+        img {
+            height: 18px;
+            width: 18px;
+        }
     }
 }
 
@@ -415,4 +464,83 @@ a[href="#search"] {
         }
     }
 
+}
+
+
+// Humburgermenu
+
+#nav-icon {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin: auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+#nav-icon span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: $medGreyCol;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+
+#nav-icon span:nth-child(1) {
+    top: 0px;
+}
+
+#nav-icon span:nth-child(2),
+#nav-icon span:nth-child(3) {
+    top: 7px;
+}
+
+#nav-icon span:nth-child(4) {
+    top: 14px;
+}
+
+#nav-icon.open span:nth-child(1) {
+    top: 7px;
+    width: 0%;
+    left: 50%;
+}
+
+#nav-icon.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#nav-icon.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#nav-icon.open span:nth-child(4) {
+    top: 7px;
+    width: 0%;
+    left: 50%;
 }

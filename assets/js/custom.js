@@ -61,3 +61,11 @@ $(document).keyup(function(e) {
     $("#search-box").removeClass("-open");
   }
 });
+
+//--------------------------------------------------------------------------------
+$(document).ready(function() {
+  $(".burgermenu").click(function() {
+    $(this).toggleClass("open");
+    $('aside').toggleClass("open");
+  });
+});
