@@ -5,6 +5,9 @@
     min-height: 50px;
     font-size: 18px;
     line-height: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
     &:focus,
     &:hover {
@@ -17,5 +20,13 @@
         min-height: 30px;
         font-size: 14px;
         border-radius: 3px;
+    }
+
+    i,
+    img {
+        font-size: 25px;
+        font-style: normal;
+        margin-right: 7px;
+        font-weight: 400;
     }
 }

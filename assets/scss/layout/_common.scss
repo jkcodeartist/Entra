@@ -121,8 +121,8 @@ button {
     margin-right: 15px;
     vertical-align: middle;
     background-color: inherit;
-    color: $medGreyCol;
-    border: 1px solid $medGreyCol;
+    color: $input-border-color;
+    border: 1px solid $input-border-color;
     border-radius: 2px;
   }
 
@@ -168,4 +168,59 @@ button {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
   }
+}
+
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
+.form-label {
+  font-size: 14px;
+  color: $darkGreyCol;
+  font-weight: 400;
+}
+
+.alert {
+  padding: 13px 15px;
+  border-radius: 5px;
+  border: 0;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 10px;
+  }
+
+  &.alert-danger {
+    background-color: #FFF7F7;
+    color: $red;
+    font-size: 14px;
+  }
+}
+
+.connector-empty {
+  padding: 100px 0;
+  text-align: center;
+  font-size: 14px;
+
+  span {
+    text-transform: uppercase;
+    display: block;
+    margin-top: 30px;
+    color: $body-color;
+    font-weight: 600;
+  }
+
+  p {
+    color: $darkGreyCol;
+  }
+}
+
+.fs-14{
+  font-size: 14px;
 }

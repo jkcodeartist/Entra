@@ -192,11 +192,20 @@ main {
         }
     }
 
+    .connector-empty {
+        padding: 50px 0;
+        height: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
 }
 
 .main-content {
     overflow: auto;
-    max-height: calc(100% - 40px);
+    max-height: calc(100% - 80px);
 }
 
 .main-wrapper {
@@ -255,5 +264,114 @@ main {
 
     .heading {
         margin-bottom: 0;
+    }
+}
+
+.img-heading {
+    .title {
+        display: flex;
+        align-items: center;
+
+        img {
+            max-width: 67px;
+            margin-right: 10px;
+        }
+
+        >div {
+            font-size: 18px;
+            font-weight: 600;
+
+            small {
+                font-weight: 400;
+                color: $darkGreyCol;
+                display: block;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.forms-wrap {
+    .checkbox_wrap {
+        min-height: 40px;
+        display: flex;
+    }
+}
+
+.controls {
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 10px;
+    }
+}
+
+.syntaxhighlighter {
+    @include media-breakpoint-down(md) {
+        max-width: 270px;
+        overflow-x: auto !important;
+    }
+}
+
+.action-panel {
+    display: flex;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(md) {
+        display: block;
+    }
+
+    .action-panel-right {
+        @include media-breakpoint-down(md) {
+            margin-bottom: 20px;
+            margin-top: 20px;
+            justify-content: end;
+        }
+
+        .btn {
+            color: $darkGreyCol;
+            margin-right: 20px !important;
+            font-size: 14px;
+
+            img {
+                margin-right: 10px;
+                height: 16px;
+            }
+        }
+    }
+}
+
+.planning-select {
+    height: 30px;
+    font-size: 14px;
+    background-color: $white;
+    border-radius: 3px;
+    text-transform: uppercase;
+    border: 0;
+    display: flex;
+    align-items: center;
+
+    .form-select {
+        outline: none;
+        box-shadow: none;
+        border: 0;
+        padding: 4px 10px;
+        min-height: initial;
+
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+    }
+
+    .status {
+        min-height: 10px;
+        min-width: 10px;
+        background: $border-color;
+        margin-left: 10px;
+        border-radius: 50%;
+
+        &.active {
+            background: #4FA0E5;
+        }
     }
 }

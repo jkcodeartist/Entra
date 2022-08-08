@@ -176,5 +176,48 @@
         }
     }
 
+    .reset-box {
+        min-height: 680px;
+        max-width: 664px;
+        margin: auto;
+        padding: 60px 50px 50px;
+
+        @include media-breakpoint-down(md) {
+            padding: 50px 30px;
+            text-align: center;
+        }
+
+        .auth-right {
+            padding: 0;
+            min-height: 460px;
+        }
+
+        .btn-link {
+            color: $brandCol;
+        }
+
+        .auth-btn {
+            margin-bottom: 10px !important;
+        }
+
+        .input-control {
+            >label {
+                color: $darkGreyCol;
+            }
+        }
+
+        .reset-auth-logo {
+            margin-bottom: 60px;
+        }
+
+        .form-style {
+            margin-bottom: 50px;
+
+            h2 {
+                margin-bottom: 30px;
+                text-transform: uppercase;
+            }
+        }
+    }
 
 }
