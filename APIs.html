@@ -156,11 +156,11 @@
     <main>
 
       <aside>
-        <a href="#" class="active">
+        <a href="#">
           <img src="assets/images/connector.svg" alt="">
           <span>Connector’s</span>
         </a>
-        <a href="#">
+        <a href="#" class="active">
           <img src="assets/images/apis.svg" alt="">
           <span>APIs</span>
         </a>
@@ -214,24 +214,81 @@
       <div class="control-panel">
         <div class="heading">
           <h2 class="title">Connector’s</h2>
-          <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#addConnector"> <i>+</i> Add
-            Connector</button>
+          <div class="d-flex">
+            <button class="btn btn-primary btn-sm me-2">New</button>
+            <button class="btn btn-light bg-white btn-sm">Import</button>
+          </div>
         </div>
         <div class="search-box">
           <input type="text" class="form-control" placeholder="Search" />
           <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action active">
-              Recommended
-              <span>(15)</span>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              Enterprise
-              <span>(3)</span>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              Social Media
-              <span>(4)</span>
-            </a>
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Twitter Integration API
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <ul class="list-unstyled listIcon">
+                      <li>
+                        <a href="#">List your repository</a>
+                      </li>
+                      <li>
+                        <a href="#">List your repository</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Facebook Timeline
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <ul class="list-unstyled listIcon">
+                      <li>
+                        <a href="#">List your repository</a>
+                      </li>
+                      <li>
+                        <a href="#">List your repository</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Instagram Integration API
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <ul class="list-unstyled listIcon">
+                      <li>
+                        <a href="#">List your repository</a>
+                      </li>
+                      <li>
+                        <a href="#">List your repository</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -243,7 +300,7 @@
               <ol class="breadcrumb mb-0">
                 <li class="breadcrumb-item"><a href="#">APIs</a></li>
                 <li class="breadcrumb-item"><a href="#">My Workspace</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Connectors</li>
+                <li class="breadcrumb-item active" aria-current="page">Facebook Timeline </li>
               </ol>
             </nav>
           </div>

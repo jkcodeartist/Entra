@@ -110,6 +110,7 @@ main {
 
         .title {
             font-size: 1rem;
+            margin-right: auto;
         }
 
         .btn {
@@ -147,11 +148,72 @@ main {
             border-radius: 3px !important;
             margin-bottom: 2px;
             font-size: 14px;
+            min-height: 40px;
 
             span {
                 color: $medSecGreyCol;
             }
         }
+
+        .accordion {
+            .accordion-body {
+                padding: 0;
+                padding-left: 40px;
+            }
+
+            .accordion-item {
+                border: 0;
+                background: $white;
+
+                .accordion-button {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    color: $greyCol;
+                    font-weight: 600;
+                    min-height: 40px;
+                    padding-left: 40px;
+                    border-radius: 5px !important;
+                    @extend .list-group-item;
+                    background: $bglightGrey;
+
+                    &.collapsed {
+                        background: $white;
+                    }
+
+                    &::after {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        left: 13px;
+                        height: 13px;
+                        width: 13px;
+                        background-size: 7px;
+                        background-position: center;
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6.001' height='10' viewBox='0 0 6.001 10'%3E%3Cg id='arrow-down-sign-to-navigate' transform='translate(-97.141 10.001) rotate(-90)'%3E%3Cpath id='Path_3' data-name='Path 3' d='M5 103.142a.681.681 0 0 1-.5-.216L.206 98.4a.765.765 0 0 1 0-1.043.676.676 0 0 1 .99 0L5 101.362l3.8-4.006a.676.676 0 0 1 .99 0 .765.765 0 0 1 0 1.043l-4.3 4.527A.681.681 0 0 1 5 103.142Z' fill='%23555'/%3E%3C/g%3E%3C/svg%3E");
+                    }
+
+                    &:hover {
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            right: 10px;
+                            height: 4px;
+                            width: 20px;
+                            background-size: 20px;
+                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='4' viewBox='0 0 20 4'%3E%3Cg id='option' transform='translate(-2 -10)'%3E%3Ccircle id='Ellipse_281' data-name='Ellipse 281' cx='2' cy='2' r='2' transform='translate(10 10)' fill='%23555'/%3E%3Ccircle id='Ellipse_282' data-name='Ellipse 282' cx='2' cy='2' r='2' transform='translate(2 10)' fill='%23555'/%3E%3Ccircle id='Ellipse_283' data-name='Ellipse 283' cx='2' cy='2' r='2' transform='translate(18 10)' fill='%23555'/%3E%3C/g%3E%3C/svg%3E");
+                            transition: all .15s ease-in-out;
+                        }
+                    }
+
+                }
+
+                .accordion-button:not(.collapsed)::after {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+
     }
 }
 
@@ -372,6 +434,26 @@ main {
 
         &.active {
             background: #4FA0E5;
+        }
+    }
+}
+
+.listIcon {
+    li {
+        margin: 5px 0;
+    }
+
+    a {
+        color: $blackGreyCol;
+        font-size: 14px;
+
+        &::before {
+            content: "";
+            height: 12px;
+            width: 12px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg id='more' transform='translate(-0.5 -0.5)'%3E%3Cpath id='Path_3321' data-name='Path 3321' d='M10.5.5h-8a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-8A2 2 0 0 0 10.5.5Zm1.2 10a1.2 1.2 0 0 1-1.2 1.2h-8a1.2 1.2 0 0 1-1.2-1.2v-8A1.2 1.2 0 0 1 2.5 1.3h8a1.2 1.2 0 0 1 1.2 1.2Z' fill='%23555'/%3E%3Cpath id='Path_3322' data-name='Path 3322' d='M3.9 3.8H6.314a.4.4 0 1 0 0-.8H3.9a.4.4 0 0 0 0 .8Z' transform='translate(-0.604 -0.501)' fill='%23555'/%3E%3Cpath id='Path_3323' data-name='Path 3323' d='M10.277 6H3.9a.4.4 0 0 0 0 .8h6.378a.4.4 0 0 0 0-.8Z' transform='translate(-0.588 -1.102)' fill='%23555'/%3E%3Cpath id='Path_3324' data-name='Path 3324' d='M10.277 9H3.9a.4.4 0 0 0 0 .8h6.378a.4.4 0 0 0 0-.8Z' transform='translate(-0.588 -1.702)' fill='%23555'/%3E%3Cpath id='Path_3325' data-name='Path 3325' d='M11.314 12H8.9a.4.4 0 0 0 0 .8h2.412a.4.4 0 0 0 0-.8Z' transform='translate(-1.612 -2.303)' fill='%23555'/%3E%3C/g%3E%3C/svg%3E");
+            display: inline-flex;
+            margin-right: 10px;
         }
     }
 }

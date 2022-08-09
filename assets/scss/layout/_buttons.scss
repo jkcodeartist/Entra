@@ -30,3 +30,18 @@
         font-weight: 400;
     }
 }
+
+button {
+    box-shadow: none !important;
+    outline: none !important;
+
+    &:focus,
+    &:hover {
+        box-shadow: none !important;
+        outline: none !important;
+    }
+}
+
+.btn-light {
+    color: $blackGreyCol;
+}

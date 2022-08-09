@@ -1,6 +1,10 @@
 .modal-header {
     padding: 20px 30px;
 
+    @include media-breakpoint-down(md) {
+        padding: 20px;
+    }
+
     .modal-title {
         color: $body-color;
         font-size: 22px;
@@ -20,14 +24,18 @@
 
 .modal-body {
     padding: 30px;
+
+    @include media-breakpoint-down(md) {
+        padding: 10px;
+    }
 }
 
 .modal-footer {
     padding: 30px;
-    padding-top: 0;
 
     @include media-breakpoint-down(md) {
         justify-content: center;
+        padding: 10px;
     }
 
     * {
