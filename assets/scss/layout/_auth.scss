@@ -8,6 +8,10 @@
         padding: 12px 0;
     }
 
+    @include media-breakpoint-down(lg) {
+        min-height: 100vh;
+    }
+
     .auth-box {
         background: $white;
         border-radius: 20px;

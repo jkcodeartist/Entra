@@ -1,0 +1,238 @@
+.table {
+    thead {
+        background: $bglightGrey;
+
+        th {
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: $blackGreyCol;
+        }
+    }
+
+    th,
+    td {
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+
+    a {
+        color: $blue;
+    }
+
+    .desc {
+        max-width: 500px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .checkbox-button__control {
+        transform: scale(0.75);
+    }
+}
+
+
+.table-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    @include media-breakpoint-down(md) {
+        display: block;
+    }
+
+    .title {
+        font-size: 14px;
+        color: $darkGreyCol;
+        margin-bottom: 0;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.table-controls {
+    margin-left: auto;
+
+    input {
+        min-width: 300px;
+    }
+}
+
+.table-wrap {
+    .checkbox_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .checkbox-button__control {
+            margin: 0;
+        }
+    }
+}
+
+.table-bordered {
+    th {
+        border-bottom: 0;
+    }
+}
+
+.page-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    margin-top: 100px;
+
+    @include media-breakpoint-down(lg) {
+        display: block;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .pagination {
+        margin-left: auto;
+
+        @include media-breakpoint-down(lg) {
+            justify-content: center;
+        }
+    }
+
+    .pagination-info {
+        display: inline-flex;
+        align-items: center;
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 20px;
+        }
+
+    }
+
+    .page-item {
+        margin: 0 5px;
+        text-align: center;
+
+        .page-link-number {
+            @include media-breakpoint-down(sm) {
+                span {
+                    display: none !important;
+                }
+            }
+
+            >div {
+                border: 1px solid $brandCol;
+                height: 40px;
+                width: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 3px;
+
+            }
+        }
+
+        &:first-child {
+            margin-right: 15px;
+            color: $blackGreyCol;
+
+            .page-link {
+                color: $blackGreyCol;
+                padding: 0;
+
+                &:hover {
+                    background: transparent;
+                    color: $brandCol;
+                }
+
+                >div {
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        &:last-child {
+            margin-left: 15px;
+
+            .page-link {
+                padding: 0;
+                color: $blackGreyCol;
+
+                &:hover {
+                    background: transparent;
+                    color: $brandCol;
+                }
+
+                >div {
+                    margin-left: 15px;
+                }
+
+            }
+        }
+    }
+
+    .item-number {
+        margin-left: 20px;
+    }
+
+    .page-link {
+        outline: initial !important;
+        box-shadow: initial !important;
+        border: initial;
+        padding: 8px 9px;
+        line-height: 1.5;
+        font-size: 1em;
+        width: auto;
+        min-width: 40px;
+        height: 40px;
+        color: $medGreyCol;
+        border-radius: $border-radius;
+        background: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover,
+        &:hover:focus {
+            background: $primary;
+            color: $white;
+        }
+
+        svg {
+            width: 15px;
+            height: 15px;
+            vertical-align: top;
+            margin-top: 2px;
+            margin-left: 2px;
+        }
+
+        i {
+            font-size: 24px;
+            line-height: 20px;
+        }
+    }
+
+    .page-item.active .page-link {
+        background: $primary;
+        box-shadow: initial !important;
+    }
+
+    .page-item.disabled .page-link {
+        opacity: 0.5;
+        color: $primary;
+        background: $white;
+        box-shadow: initial !important;
+    }
+
+    .page-item:first-child .page-link,
+    .page-item:last-child .page-link {
+        border-radius: $border-radius;
+    }
+
+}
+
+.tableButtons {
+    width: 320px;
+}

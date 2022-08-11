@@ -53,11 +53,6 @@
 
         @include media-breakpoint-down(md) {
             margin: 0 5px;
-        }
-
-        &.btn-outline-secondary {
-            color: $medSecGreyCol;
-            border-color: #E6E6E6;
-        }
+        } 
     }
 }

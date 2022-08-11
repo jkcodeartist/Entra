@@ -7,8 +7,18 @@ header {
     padding: 0 30px;
     min-height: 80px;
 
+
     @include media-breakpoint-down(xxl) {
         padding: 0px 15px;
+    }
+
+    @include media-breakpoint-down(xl) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 9999;
     }
 
     @include media-breakpoint-down(md) {

@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <title>Entra</title>
+
+  <link href="assets/css/custom.css" rel="stylesheet">
+  <link href="assets/css/developer.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="wrapper h-100">
+
+    <header>
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div id="nav-icon" class="burgermenu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <a class="navbar-brand" href="Connectors.html">
+          <img src="assets/images/logo.png" class="img-fluid" alt="">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Workspaces
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Role</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Reports</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="user-actions navbar_right">
+
+        <div class="searchUsers">
+          <div class="form-group search-control">
+            <input type="text" placeholder="Search here…">
+            <a href="#search">
+              <img src="assets/images/search.svg" alt="">
+            </a>
+            <!-- RESPONSIVE SEARCH -->
+            <div id="search-box">
+              <div class="container">
+                <a class="close" href="#close"></a>
+                <div class="search-main">
+                  <div class="search-inner">
+                    <input type="text" id="inputSearch" name="firstname" placeholder="Search ">
+                    <button>
+                      <img src="assets/images/search.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="userList">
+            <a href="#">
+              <img src="assets/images/user-1.png" alt="">
+              <img src="assets/images/user-2.png" alt="">
+              <img src="assets/images/user-3.png" alt="">
+              <div class="total">+3</div>
+            </a>
+          </div>
+          <a href="#" class="btn btn-secondary btn-sm">Invite</a>
+        </div>
+
+        <div class="full-screen-icon">
+          <a href="#" id="btnFullscreen">
+            <img src="assets/images/full-screen.svg" alt="">
+          </a>
+        </div>
+
+        <div class="dropdown bellNotification">
+          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img src="assets/images/bell.svg" alt="">
+            <span>8</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+            <div class="title">
+              <span>notifications</span>
+            </div>
+            <ul class="list-unstyled">
+              <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></li>
+              <li><a class="dropdown-item" href="#">Sed facilisis erat vel vulputate egestas</a></li>
+              <li><a class="dropdown-item" href="#">Cras blandit sapien nec vestibulum condimentum </a></li>
+            </ul>
+            <div class="title btn-viewAll">
+              <a href="#">View All Notifications </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown userDropdown">
+          <a class="userDetail dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img src="assets/images/user.png" alt="">
+            <span>
+              Mohammed Aldosari
+              <p>Technical Support</p>
+            </span>
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <!-- item-->
+            <h6 class="dropdown-header">Welcome Aldosari!</h6>
+            <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i>
+              <span class="align-middle">Profile</span></a>
+            <a class="dropdown-item" href="#"><i
+                class="mdi mdi-message-text-outline text-muted fs-16 align-middle me-1"></i> <span
+                class="align-middle">Messages</span></a>
+            <a class="dropdown-item" href="#"><i class="mdi mdi-lifebuoy text-muted fs-16 align-middle me-1"></i> <span
+                class="align-middle">Help</span></a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><i class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i>
+              <span class="align-middle">Settings</span></a>
+            <a class="dropdown-item" href="#"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span
+                class="align-middle" data-key="t-logout">Logout</span></a>
+          </ul>
+        </div>
+
+      </div>
+
+    </header>
+
+
+
+    <main>
+
+      <aside>
+        <a href="Connectors.html">
+          <img src="assets/images/connector.svg" alt="">
+          <span>Connector’s</span>
+        </a>
+        <a href="APIs.html">
+          <img src="assets/images/apis.svg" alt="">
+          <span>APIs</span>
+        </a>
+        <a href="Users.html" class="active">
+          <img src="assets/images/user.svg" alt="">
+          <span>Users</span>
+        </a>
+        <a href="#">
+          <img src="assets/images/servers.svg" alt="">
+          <span>Mock Servers</span>
+        </a>
+        <a href="#">
+          <img src="assets/images/monitors.svg" alt="">
+          <span>Monitors</span>
+        </a>
+        <a href="#">
+          <img src="assets/images/history.svg" alt="">
+          <span>History</span>
+        </a>
+        <div class="d-xl-none">
+          <a href="#">
+            <i class="mdi mdi-home-outline"></i>
+            <span>Home</span>
+          </a>
+          <div>
+            <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+              aria-controls="collapseExample">
+              <i class="mdi mdi-briefcase-outline"></i>
+              Workspaces
+            </a>
+            <div class="collapse" id="collapseExample">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </div>
+          </div>
+          <a href="#">
+            <i class="mdi mdi-account-multiple-outline"></i>
+            <span>Role</span>
+          </a>
+          <a href="#">
+            <i class="mdi mdi-file-chart-outline"></i>
+            <span>Reports</span>
+          </a>
+        </div>
+      </aside>
+
+      <div class="content-wrapper">
+        <section class="main-wrapper">
+          <div class="action-panel">
+            <div class="breadcrumb-wrap">
+              <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item"><a href="#">APIs</a></li>
+                  <li class="breadcrumb-item"><a href="#">My Workspace</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Users </li>
+                </ol>
+              </nav>
+            </div>
+            <div class="action-panel-right d-flex align-items-center">
+              <button class="btn p-0 btn-sm">
+                <img src="assets/images/refresh.svg" alt="">
+                <span>Refresh</span>
+              </button>
+              <button class="btn btn-primary text-white btn-sm px-3 me-0" data-bs-toggle="modal"
+                data-bs-target="#addUser">
+                <img src="assets/images/plus.svg" height="14" width="14" alt="">
+                <span>New User</span>
+              </button>
+            </div>
+          </div>
+          <div class="contentPanel">
+            <div class="heading img-heading  mb-40">
+              <h2 class="title">
+                <span>All Users Preview</span>
+              </h2>
+              <div class="table-controls">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+            </div>
+            <div class="main-content">
+
+              <div class="table-wrap">
+
+                <div class="table-responsive">
+                  <table class="table table-borderless table-bordered table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col"> # </th>
+                        <th scope="col">Name</th>
+                        <th scope="col">email</th>
+                        <th scope="col">Mobile</th>
+                        <th scope="col">User type</th>
+                        <th scope="col" class="tableButtons">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row">
+                          9823
+                        </td>
+                        <td>Yousef Abdullrahman</td>
+                        <td>
+                          alaaassaf57@hotmail.com
+                        </td>
+                        <td>
+                          +966 876234756
+                        </td>
+                        <td>
+                          Member
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <button class="btn text-secondary p-0 btn-sm me-4">
+                              <img src="assets/images/edit.svg" alt="">
+                              <span>Edit</span>
+                            </button>
+                            <button class="btn text-secondary p-0 btn-sm me-4">
+                              <img src="assets/images/reset-pwd.svg" alt="">
+                              <span>Reset password</span>
+                            </button>
+                            <button class="btn text-secondary p-0 btn-sm">
+                              <img src="assets/images/delete.svg" height="16" alt="">
+                              <span>Delete</span>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row">
+                          9823
+                        </td>
+                        <td>Yousef Abdullrahman</td>
+                        <td>
+                          alaaassaf57@hotmail.com
+                        </td>
+                        <td>
+                          +966 876234756
+                        </td>
+                        <td>
+                          Member
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <button class="btn text-secondary p-0 btn-sm me-4">
+                              <img src="assets/images/edit.svg" alt="">
+                              <span>Edit</span>
+                            </button>
+                            <button class="btn text-secondary p-0 btn-sm me-4">
+                              <img src="assets/images/reset-pwd.svg" alt="">
+                              <span>Reset password</span>
+                            </button>
+                            <button class="btn text-secondary p-0 btn-sm">
+                              <img src="assets/images/delete.svg" height="16" alt="">
+                              <span>Delete</span>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row">
+                          9823
+                        </td>
+                        <td>Yousef Abdullrahman</td>
+                        <td>
+                          alaaassaf57@hotmail.com
+                        </td>
+                        <td>
+                          +966 876234756
+                        </td>
+                        <td>
+                          Member
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <button class="btn text-secondary p-0 btn-sm me-4">
+                              <img src="assets/images/edit.svg" alt="">
+                              <span>Edit</span>
+                            </button>
+                            <button class="btn text-secondary p-0 btn-sm me-4">
+                              <img src="assets/images/reset-pwd.svg" alt="">
+                              <span>Reset password</span>
+                            </button>
+                            <button class="btn text-secondary p-0 btn-sm">
+                              <img src="assets/images/delete.svg" height="16" alt="">
+                              <span>Delete</span>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row">
+                          9823
+                        </td>
+                        <td>Yousef Abdullrahman</td>
+                        <td>
+                          alaaassaf57@hotmail.com
+                        </td>
+                        <td>
+                          +966 876234756
+                        </td>
+                        <td>
+                          Member
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <button class="btn text-secondary p-0 btn-sm me-4">
+                              <img src="assets/images/edit.svg" alt="">
+                              <span>Edit</span>
+                            </button>
+                            <button class="btn text-secondary p-0 btn-sm me-4">
+                              <img src="assets/images/reset-pwd.svg" alt="">
+                              <span>Reset password</span>
+                            </button>
+                            <button class="btn text-secondary p-0 btn-sm">
+                              <img src="assets/images/delete.svg" height="16" alt="">
+                              <span>Delete</span>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row">
+                          9823
+                        </td>
+                        <td>Yousef Abdullrahman</td>
+                        <td>
+                          alaaassaf57@hotmail.com
+                        </td>
+                        <td>
+                          +966 876234756
+                        </td>
+                        <td>
+                          Member
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <button class="btn text-secondary p-0 btn-sm me-4">
+                              <img src="assets/images/edit.svg" alt="">
+                              <span>Edit</span>
+                            </button>
+                            <button class="btn text-secondary p-0 btn-sm me-4">
+                              <img src="assets/images/reset-pwd.svg" alt="">
+                              <span>Reset password</span>
+                            </button>
+                            <button class="btn text-secondary p-0 btn-sm">
+                              <img src="assets/images/delete.svg" height="16" alt="">
+                              <span>Delete</span>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row">
+                          9823
+                        </td>
+                        <td>Yousef Abdullrahman</td>
+                        <td>
+                          alaaassaf57@hotmail.com
+                        </td>
+                        <td>
+                          +966 876234756
+                        </td>
+                        <td>
+                          Member
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <button class="btn text-secondary p-0 btn-sm me-4">
+                              <img src="assets/images/edit.svg" alt="">
+                              <span>Edit</span>
+                            </button>
+                            <button class="btn text-secondary p-0 btn-sm me-4">
+                              <img src="assets/images/reset-pwd.svg" alt="">
+                              <span>Reset password</span>
+                            </button>
+                            <button class="btn text-secondary p-0 btn-sm">
+                              <img src="assets/images/delete.svg" height="16" alt="">
+                              <span>Delete</span>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row">
+                          9823
+                        </td>
+                        <td>Yousef Abdullrahman</td>
+                        <td>
+                          alaaassaf57@hotmail.com
+                        </td>
+                        <td>
+                          +966 876234756
+                        </td>
+                        <td>
+                          Member
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <button class="btn text-secondary p-0 btn-sm me-4">
+                              <img src="assets/images/edit.svg" alt="">
+                              <span>Edit</span>
+                            </button>
+                            <button class="btn text-secondary p-0 btn-sm me-4">
+                              <img src="assets/images/reset-pwd.svg" alt="">
+                              <span>Reset password</span>
+                            </button>
+                            <button class="btn text-secondary p-0 btn-sm">
+                              <img src="assets/images/delete.svg" height="16" alt="">
+                              <span>Delete</span>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row">
+                          9823
+                        </td>
+                        <td>Yousef Abdullrahman</td>
+                        <td>
+                          alaaassaf57@hotmail.com
+                        </td>
+                        <td>
+                          +966 876234756
+                        </td>
+                        <td>
+                          Member
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <button class="btn text-secondary p-0 btn-sm me-4">
+                              <img src="assets/images/edit.svg" alt="">
+                              <span>Edit</span>
+                            </button>
+                            <button class="btn text-secondary p-0 btn-sm me-4">
+                              <img src="assets/images/reset-pwd.svg" alt="">
+                              <span>Reset password</span>
+                            </button>
+                            <button class="btn text-secondary p-0 btn-sm">
+                              <img src="assets/images/delete.svg" height="16" alt="">
+                              <span>Delete</span>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row">
+                          9823
+                        </td>
+                        <td>Yousef Abdullrahman</td>
+                        <td>
+                          alaaassaf57@hotmail.com
+                        </td>
+                        <td>
+                          +966 876234756
+                        </td>
+                        <td>
+                          Member
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <button class="btn text-secondary p-0 btn-sm me-4">
+                              <img src="assets/images/edit.svg" alt="">
+                              <span>Edit</span>
+                            </button>
+                            <button class="btn text-secondary p-0 btn-sm me-4">
+                              <img src="assets/images/reset-pwd.svg" alt="">
+                              <span>Reset password</span>
+                            </button>
+                            <button class="btn text-secondary p-0 btn-sm">
+                              <img src="assets/images/delete.svg" height="16" alt="">
+                              <span>Delete</span>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <nav class="page-navigation" aria-label="Page navigation">
+                  <div class="pagination-info">
+                    <span>Showing row per page</span>
+                    <div class="item-number">
+                      <div class="selection-number btn-group">
+                        <select name="" class="form-select ">
+                          <option>10</option>
+                          <option>50</option>
+                          <option>100</option>
+                          <option>200</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link page-link-number" href="#">
+                        <div>
+                          <img src="assets/images/left-arrow.svg" alt="">
+                        </div>
+                        <span>PREVIOUS</span>
+                      </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link page-link-number" href="#">
+                        <span>NEXT</span>
+                        <div>
+                          <img src="assets/images/right-arrow.svg" alt="">
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+    </main>
+
+
+  </div>
+
+  <!-- Connector Modal -->
+  <div class="modal fade" id="addUser" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="addUserLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addUserLabel">Add User</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="modal-form">
+              <div class="row">
+                <div class="col-xl-6">
+                  <div class="controls mb-3">
+                    <label class="form-label">Username <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" placeholder="Username">
+                  </div>
+                  <div class="controls mb-3">
+                    <label class="form-label">Username <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" placeholder="Username">
+                  </div>
+                  <div class="controls mb-3">
+                    <label class="form-label">Confirm Password <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" placeholder="Confirm Password ">
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="avatar-upload">
+                    <div class="avatar-preview">
+                      <div id="imagePreview">
+                      </div>
+                    </div>
+                    <div class="avatar-edit">
+                      <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                      <label for="imageUpload">
+                        <img src="assets/images/plus-blue.svg" alt="">
+                        Upload Photo
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-12">
+                  <div class="row">
+                    <div class="col-xl-6">
+                      <div class="controls mb-3">
+                        <label class="form-label">First Name </label>
+                        <input type="text" class="form-control" placeholder="First Name ">
+                      </div>
+                    </div>
+                    <div class="col-xl-6">
+                      <div class="controls mb-3">
+                        <label class="form-label">Last Name </label>
+                        <input type="text" class="form-control" placeholder="Last Name ">
+                      </div>
+                    </div>
+                    <div class="col-xl-12">
+                      <div class="controls mb-3">
+                        <label class="form-label">Email Address </label>
+                        <input type="email" class="form-control" placeholder="Email Address ">
+                      </div>
+                    </div>
+                    <div class="col-xl-6">
+                      <div class="controls d-flex align-items-center mb-3">
+                        <label class="form-label me-5">Gender </label>
+                        <div class="checkbox_wrap d-flex ">
+                          <label class="checkbox-button me-4" for="choice1-1">
+                            <input type="radio" class="checkbox-button__input" id="choice1-1" name="exampleRadios"
+                              checked="">
+                            <span class="checkbox-button__control"></span>
+                            <span class="checkbox-button__label" for="choice1-1">Male</span>
+                          </label>
+                          <label class="checkbox-button" for="choice1-2">
+                            <input type="radio" class="checkbox-button__input" id="choice1-2" name="exampleRadios">
+                            <span class="checkbox-button__control"></span>
+                            <span class="checkbox-button__label" for="choice1-2">Female</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-12">
+                  <div class="row">
+                    <div class="col-xl-6">
+                      <div class="controls mb-3">
+                        <label class="form-label">Date of Birth </label>
+                        <input type="date" class="form-control" placeholder="Date of Birth ">
+                      </div>
+                    </div>
+                    <div class="col-xl-6">
+                      <div class="controls mb-3">
+                        <label class="form-label">Mobile </label>
+                        <input type="text" class="form-control" placeholder="Mobile ">
+                      </div>
+                    </div>
+                    <div class="col-xl-6">
+                      <div class="controls mb-3">
+                        <label class="form-label">Role <span class="text-danger">*</span> </label>
+                        <select name="1" id="1" class="form-select">
+                          <option>Select Roll</option>
+                          <option>1</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button id="liveToastBtn" type="button" class="btn btn-primary px-4" data-bs-dismiss="modal">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ALERT POPUP MANAGE -->
+  <div id="liveToast" class="toast align-items-center alert alert-success" role="alert" aria-live="assertive"
+    aria-atomic="true">
+    <div class="d-flex">
+      <img src="assets/images/check-alert.svg" alt="">
+      <div class="toast-body">
+        Your new user has been added successfully
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close">Close</button>
+    </div>
+  </div>
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+    //---ALERT POPUP MANAGE-----------------------------------------------------------------------------
+    var toastTrigger = document.getElementById('liveToastBtn')
+    var toastLiveExample = document.getElementById('liveToast')
+    if (toastTrigger) {
+      toastTrigger.addEventListener('click', function () {
+        var toast = new bootstrap.Toast(toastLiveExample)
+
+        toast.show()
+      })
+    }
+  </script>
+
+</body>
+
+</html>

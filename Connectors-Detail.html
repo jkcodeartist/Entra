@@ -156,17 +156,17 @@
     <main>
 
       <aside>
-        <a href="#" class="active">
+        <a href="Connectors.html" class="active">
           <img src="assets/images/connector.svg" alt="">
           <span>Connector’s</span>
         </a>
-        <a href="#">
+        <a href="APIs.html">
           <img src="assets/images/apis.svg" alt="">
           <span>APIs</span>
         </a>
-        <a href="#">
-          <img src="assets/images/environment.svg" alt="">
-          <span>Environments</span>
+        <a href="Users.html">
+          <img src="assets/images/user.svg" alt="">
+          <span>Users</span>
         </a>
         <a href="#">
           <img src="assets/images/servers.svg" alt="">
@@ -211,236 +211,228 @@
         </div>
       </aside>
 
-      <div class="control-panel">
-        <div class="heading">
-          <h2 class="title">Connector’s</h2>
-          <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#addConnector"> <i>+</i> Add
-            Connector</button>
-        </div>
-        <div class="search-box">
-          <input type="text" class="form-control" placeholder="Search" />
-          <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action active">
-              Recommended
-              <span>(15)</span>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              Enterprise
-              <span>(3)</span>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              Social Media
-              <span>(4)</span>
-            </a>
+      <div class="content-wrapper">
+        <div class="control-panel">
+          <div class="heading">
+            <h2 class="title">Connector’s</h2>
+            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#addConnector"> <i>+</i> Add
+              Connector</button>
           </div>
-        </div>
-      </div>
-
-      <section class="main-wrapper">
-        <div class="action-panel">
-          <div class="breadcrumb-wrap">
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-              <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item"><a href="#">APIs</a></li>
-                <li class="breadcrumb-item"><a href="#">My Workspace</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Connectors</li>
-              </ol>
-            </nav>
-          </div>
-          <div class="action-panel-right d-flex align-items-center">
-            <button class="btn p-0 btn-sm">
-              <img src="assets/images/delete.svg" alt="">
-              <span>Delete</span>
-            </button>
-            <div class="planning-select">
-              <span class="status active"></span>
-              <select class="form-select">
-                <option selected> In Planning</option>
-                <option value="1">Private key in header</option>
-                <option value="2">Private key in header</option>
-                <option value="3">Private key in header</option>
-              </select>
+          <div class="search-box">
+            <input type="text" class="form-control" placeholder="Search" />
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action active">
+                Recommended
+                <span>(15)</span>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                Enterprise
+                <span>(3)</span>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                Social Media
+                <span>(4)</span>
+              </a>
             </div>
           </div>
         </div>
-        <div class="contentPanel">
-          <div class="heading img-heading  mb-40">
-            <h2 class="title">
-              <img src="assets/images/b1.png" alt="">
-              <div>
-                <span>Sales Force</span>
-                <small>API Connector</small>
-              </div>
-            </h2>
-            <div class="dropdown content-wrap ms-auto">
-              <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Connector’s
+
+        <section class="main-wrapper">
+          <div class="action-panel">
+            <div class="breadcrumb-wrap">
+              <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item"><a href="#">APIs</a></li>
+                  <li class="breadcrumb-item"><a href="#">My Workspace</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Connector </li>
+                </ol>
+              </nav>
+            </div>
+            <div class="action-panel-right d-flex align-items-center">
+              <button class="btn p-0 btn-sm">
+                <img src="assets/images/delete.svg" alt="">
+                <span>Delete</span>
               </button>
-              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
-                <div class="control-panel-load"> </div>
+              <div class="planning-select">
+                <span class="status active"></span>
+                <select class="form-select">
+                  <option selected> In Planning</option>
+                  <option value="1">Private key in header</option>
+                  <option value="2">Private key in header</option>
+                  <option value="3">Private key in header</option>
+                </select>
               </div>
             </div>
           </div>
-          <div class="main-content">
-
-            <div class="container-fluid">
-              <form>
-
-                <div class="forms-wrap mb-30">
-                  <div class="heading mb-3">
-                    <h2 class="title">
-                      Connector Details
-                    </h2>
-                  </div>
-                  <div class="row align-items-end">
-
-                    <div class="col-xl-3 col-lg-6">
-                      <div class="controls">
-                        <label class="form-label">API Name</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-6">
-                      <div class="controls">
-                        <label class="form-label">Authentication Method</label>
-                        <select class="form-select">
-                          <option selected>Choose...</option>
-                          <option value="1">Private key in header</option>
-                          <option value="2">Private key in header</option>
-                          <option value="3">Private key in header</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-6">
-                      <div class="controls">
-                        <label class="form-label">Key Value</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-6">
-                      <a href="#" role="button" class="btn d-flex p-0" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop">
-                        <img src="assets/images/delete.svg" alt="">
-                      </a>
-                    </div>
-
-                  </div>
+          <div class="contentPanel">
+            <div class="heading img-heading  mb-40">
+              <h2 class="title">
+                <img src="assets/images/b1.png" alt="">
+                <div>
+                  <span>Sales Force</span>
+                  <small>API Connector</small>
                 </div>
+              </h2>
+            </div>
+            <div class="main-content">
 
-                <div class="forms-wrap mb-30">
-                  <div class="heading mb-3">
-                    <h2 class="title">
-                      Headers
-                    </h2>
-                  </div>
-                  <div class="row align-items-end">
+              <div class="container-fluid">
+                <form>
 
-                    <div class="col-xl-3 col-lg-6">
-                      <div class="controls">
-                        <label class="form-label">Key</label>
-                        <input type="text" placeholder="Authentication" class="form-control">
-                      </div>
+                  <div class="forms-wrap mb-30">
+                    <div class="heading mb-3">
+                      <h2 class="title">
+                        Connector Details
+                      </h2>
                     </div>
+                    <div class="row align-items-end">
 
-                    <div class="col-xl-3 col-lg-6">
-                      <div class="controls">
-                        <label class="form-label">Value</label>
-                        <input type="text" placeholder="Authentication" class="form-control">
-                      </div>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-6">
-                      <div class="controls">
-                        <div class="checkbox_wrap">
-                          <label class="checkbox-button me-4">
-                            <input type="checkbox" class="checkbox-button__input" id="choice1-1" name="choice1" checked>
-                            <span class="checkbox-button__control"></span>
-                            <span class="checkbox-button__label">Optional</span>
-                          </label>
-                          <label class="checkbox-button">
-                            <input type="checkbox" class="checkbox-button__input" id="choice1-2" name="choice2">
-                            <span class="checkbox-button__control"></span>
-                            <span class="checkbox-button__label">Private</span>
-                          </label>
+                      <div class="col-xl-3 col-lg-6">
+                        <div class="controls">
+                          <label class="form-label">API Name</label>
+                          <input type="text" class="form-control">
                         </div>
                       </div>
-                    </div>
 
-                    <div class="col-xl-3 col-lg-6">
-                      <a href="#" role="button" class="btn d-flex p-0" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop">
-                        <img src="assets/images/delete.svg" alt="">
-                      </a>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="forms-wrap mb-30">
-                  <div class="heading mb-3 ">
-                    <h2 class="title">
-                      Connector Body
-                    </h2>
-                  </div>
-                  <div class="row align-items-end">
-
-                    <div class="col-xl-3 col-lg-6  mb-3">
-                      <div class="controls">
-                        <label class="form-label">Body Type</label>
-                        <select class="form-select">
-                          <option selected>Choose...</option>
-                          <option value="1">JSON</option>
-                          <option value="2">HTML</option>
-                          <option value="3">CSS</option>
-                        </select>
+                      <div class="col-xl-3 col-lg-6">
+                        <div class="controls">
+                          <label class="form-label">Authentication Method</label>
+                          <select class="form-select">
+                            <option selected>Choose...</option>
+                            <option value="1">Private key in header</option>
+                            <option value="2">Private key in header</option>
+                            <option value="3">Private key in header</option>
+                          </select>
+                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-xl-12">
-                      <div class="controls">
-                        <label class="form-label">Body (JSON Object)</label>
-                        <pre class="brush: xml">
-
-                            <!-- code highlighting begins -->
-                          &lt;html&gt;
-                          &lt;head&gt;
-                          <link type="text/css" rel="stylesheet" href="css/sample.css" />
-                          <script type="text/javascript" src="js/sample.js"></script>
-                              <style>
-                          body { background:#fff; font: 12px;}
-                              </style>
-                          &lt;/head&gt;
-                          &lt;body&gt;
-                          <h1>My First Heading</h1>
-                          <p>My first paragraph.</p>
-                          &lt;/body&gt;
-                          &lt;/html&gt;
-                          <!-- code highlighting ends -->
-                          </pre>
+                      <div class="col-xl-3 col-lg-6">
+                        <div class="controls">
+                          <label class="form-label">Key Value</label>
+                          <input type="text" class="form-control">
+                        </div>
                       </div>
+
+                      <div class="col-xl-3 col-lg-6">
+                        <a href="#" role="button" class="btn d-flex p-0" data-bs-toggle="modal"
+                          data-bs-target="#staticBackdrop">
+                          <img src="assets/images/delete.svg" alt="">
+                        </a>
+                      </div>
+
                     </div>
-
                   </div>
-                </div>
 
-              </form>
+                  <div class="forms-wrap mb-30">
+                    <div class="heading mb-3">
+                      <h2 class="title">
+                        Headers
+                      </h2>
+                    </div>
+                    <div class="row align-items-end">
+
+                      <div class="col-xl-3 col-lg-6">
+                        <div class="controls">
+                          <label class="form-label">Key</label>
+                          <input type="text" placeholder="Authentication" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="col-xl-3 col-lg-6">
+                        <div class="controls">
+                          <label class="form-label">Value</label>
+                          <input type="text" placeholder="Authentication" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="col-xl-3 col-lg-6">
+                        <div class="controls">
+                          <div class="checkbox_wrap">
+                            <label class="checkbox-button me-4">
+                              <input type="radio" class="checkbox-button__input" id="choice1-1" name="choice1" checked>
+                              <span class="checkbox-button__control"></span>
+                              <span class="checkbox-button__label">Optional</span>
+                            </label>
+                            <label class="checkbox-button">
+                              <input type="radio" class="checkbox-button__input" id="choice1-2" name="choice1">
+                              <span class="checkbox-button__control"></span>
+                              <span class="checkbox-button__label">Private</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-3 col-lg-6">
+                        <a href="#" role="button" class="btn d-flex p-0" data-bs-toggle="modal"
+                          data-bs-target="#staticBackdrop">
+                          <img src="assets/images/delete.svg" alt="">
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="forms-wrap mb-30">
+                    <div class="heading mb-3 ">
+                      <h2 class="title">
+                        Connector Body
+                      </h2>
+                    </div>
+                    <div class="row align-items-end">
+
+                      <div class="col-xl-3 col-lg-6  mb-3">
+                        <div class="controls">
+                          <label class="form-label">Body Type</label>
+                          <select class="form-select">
+                            <option selected>Choose...</option>
+                            <option value="1">JSON</option>
+                            <option value="2">HTML</option>
+                            <option value="3">CSS</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-12">
+                        <div class="controls">
+                          <label class="form-label">Body (JSON Object)</label>
+                          <pre class="brush: xml">
+
+                                <!-- code highlighting begins -->
+                              &lt;html&gt;
+                              &lt;head&gt;
+                              <link type="text/css" rel="stylesheet" href="css/sample.css" />
+                              <script type="text/javascript" src="js/sample.js"></script>
+                                  <style>
+                              body { background:#fff; font: 12px;}
+                                  </style>
+                              &lt;/head&gt;
+                              &lt;body&gt;
+                              <h1>My First Heading</h1>
+                              <p>My first paragraph.</p>
+                              &lt;/body&gt;
+                              &lt;/html&gt;
+                              <!-- code highlighting ends -->
+                              </pre>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+
+
             </div>
-
-
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
 
     </main>
 
 
   </div>
-
 
   <!-- Modal -->
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -538,6 +530,7 @@
   <script>
     SyntaxHighlighter.all();
   </script>
+
 
 </body>
 

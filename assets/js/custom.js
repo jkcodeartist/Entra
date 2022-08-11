@@ -34,11 +34,19 @@ document.getElementById("btnFullscreen").addEventListener("click", function() {
 
 //--------------------------------------------------------------------------------
 
-$(window).on("load resize", function() {
-  if ($(window).width() <= 1199) {
-    $(".control-panel-load").replaceWith($(".control-panel"));
-  }
-});
+// $(window).on("load resize", function() {
+//   if ($(window).width() <= 1199) {
+//     $(".control-panel-load").replaceWith($(".control-panel"));
+//   }
+// });
+
+if ($(window).width() <= 1199) {
+  $(".search-box").hide();
+  $(".control-panel").click(function() {
+    $(".control-panel").toggleClass("active", 1000);
+    $(".search-box").slideToggle();
+  });
+}
 
 //--------------------------------------------------------------------------------
 
@@ -140,4 +148,23 @@ $(".remove-preview").on("click", function() {
   boxZone.empty();
   previewZone.addClass("hidden");
   reset(dropzone);
+});
+
+//---Profile Image Uploading-----------------------------------------------------------------------------
+function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      $("#imagePreview").css(
+        "background-image",
+        "url(" + e.target.result + ")"
+      );
+      $("#imagePreview").hide();
+      $("#imagePreview").fadeIn(650);
+    };
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+$("#imageUpload").change(function() {
+  readURL(this);
 });

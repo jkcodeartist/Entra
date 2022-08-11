@@ -45,3 +45,23 @@ button {
 .btn-light {
     color: $blackGreyCol;
 }
+
+.btn-outline-secondary {
+    color: #999999;
+    border-color: #E6E6E6;
+}
+
+.btn-box {
+    margin-top: 60px;
+
+    .btn {
+        min-width: 170px;
+        margin-right: 20px;
+
+        @include media-breakpoint-down(md) {
+            min-width: 120px;
+            padding: 10px;
+            margin-right: 10px;
+        }
+    }
+}
