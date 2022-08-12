@@ -129,6 +129,132 @@ header {
             font-weight: 400;
         }
     }
+
+    .dropdown-menu {
+        min-width: 370px;
+        padding: 0;
+        right: 140px !important;
+
+        @include media-breakpoint-down(xl) {
+            right: 10px !important;
+        }
+
+        @include media-breakpoint-down(sm) {
+            min-width: 345px;
+            right: 0 !important;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -9px;
+            right: 20px;
+            width: 0;
+            height: 0;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-bottom: 9px solid $white;
+
+            @include media-breakpoint-down(xxl) {
+                right: 10px;
+            }
+        }
+    }
+
+    .dropdown-profile {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        background: $bglightGrey;
+
+        img {
+            margin-right: 20px;
+        }
+
+        div {
+            h2 {
+                font-size: 1rem;
+                font-weight: 700;
+                color: $blackGreyCol;
+            }
+
+            p {
+                font-size: 14px;
+                color: $brandCol;
+                margin-bottom: 5px;
+            }
+
+            a {
+                display: block;
+                color: $darkGreyCol;
+
+                &:hover {
+                    color: $brandCol;
+                }
+
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .setting-profile {
+        padding: 20px;
+
+        a {
+            color: $blackGreyCol;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &:hover {
+                color: $brandCol;
+            }
+
+            span {
+                height: 34px;
+                width: 34px;
+                background: $bglightGrey;
+                border-radius: 50%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .user-controls {
+        display: flex;
+        @extend .setting-profile;
+        padding: 0;
+        background: $bglightGrey;
+
+        a {
+            border-left: 1px solid $input-border-color;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 50%;
+            margin-bottom: 0;
+
+            &:first-child {
+                border: 0;
+            }
+
+            span {
+                height: auto;
+                width: auto;
+            }
+        }
+    }
+
 }
 
 .bellNotification {

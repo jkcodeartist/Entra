@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <title>Entra</title>
+
+  <link href="assets/css/custom.css" rel="stylesheet">
+  <link href="assets/css/developer.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="wrapper h-100">
+
+    <header>
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div id="nav-icon" class="burgermenu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <a class="navbar-brand" href="Connectors.html">
+          <img src="assets/images/logo.png" class="img-fluid" alt="">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Workspaces
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Role</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Reports</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="user-actions navbar_right">
+
+        <div class="searchUsers">
+          <div class="form-group search-control">
+            <input type="text" placeholder="Search here…">
+            <a href="#search">
+              <img src="assets/images/search.svg" alt="">
+            </a>
+            <!-- RESPONSIVE SEARCH -->
+            <div id="search-box">
+              <div class="container">
+                <a class="close" href="#close"></a>
+                <div class="search-main">
+                  <div class="search-inner">
+                    <input type="text" id="inputSearch" name="firstname" placeholder="Search ">
+                    <button>
+                      <img src="assets/images/search.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="userList">
+            <a href="#">
+              <img src="assets/images/user-1.png" alt="">
+              <img src="assets/images/user-2.png" alt="">
+              <img src="assets/images/user-3.png" alt="">
+              <div class="total">+3</div>
+            </a>
+          </div>
+          <a href="#" class="btn btn-secondary btn-sm">Invite</a>
+        </div>
+
+        <div class="full-screen-icon">
+          <a href="#" id="btnFullscreen">
+            <img src="assets/images/full-screen.svg" alt="">
+          </a>
+        </div>
+
+        <div class="dropdown bellNotification">
+          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img src="assets/images/bell.svg" alt="">
+            <span>8</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+            <div class="title">
+              <span>notifications</span>
+            </div>
+            <ul class="list-unstyled">
+              <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></li>
+              <li><a class="dropdown-item" href="#">Sed facilisis erat vel vulputate egestas</a></li>
+              <li><a class="dropdown-item" href="#">Cras blandit sapien nec vestibulum condimentum </a></li>
+            </ul>
+            <div class="title btn-viewAll">
+              <a href="#">View All Notifications </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown userDropdown">
+          <a class="userDetail dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img src="assets/images/user-img.png" alt="">
+            <span>
+              Mohammed Aldosari
+              <p>Technical Support</p>
+            </span>
+          </a>
+
+          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+            <div class="dropdown-profile">
+              <img src="assets/images/user-img.png" class="img-fluid" alt="">
+              <div>
+                <h2>Mohammed Aldosari</h2>
+                <p>Technical Support</p>
+                <a href="#">
+                  <img src="assets/images/email.svg" alt="">
+                  mohammed@hotmail.com
+                </a>
+                <a href="#">
+                  <img src="assets/images/location.svg" alt="">
+                  Riyadh, Saudi Arabia
+                </a>
+              </div>
+            </div>
+            <div class="setting-profile">
+              <a href="#">
+                <span>
+                  <img src="assets/images/settings.svg" alt="">
+                </span>
+                Settiings
+              </a>
+              <a href="#">
+                <span>
+                  <img src="assets/images/log-history.svg" alt="">
+                </span>
+                Login History
+              </a>
+            </div>
+            <div class="user-controls">
+              <a href="Profile.html">
+                <span>
+                  <img src="assets/images/log-history.svg" alt="">
+                </span>
+                Edit Profile
+              </a>
+              <a href="Auth.html">
+                <span>
+                  <img src="assets/images/log-history.svg" alt="">
+                </span>
+                Log Out
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </header>
+
+    <section class="profileSection">
+      <div class="container">
+
+        <div class="userProfile">
+
+          <div class="coverBanner">
+            <div class="avatar-upload">
+              <div class="avatar-preview">
+                <div id="imagePreview1">
+                </div>
+              </div>
+              <div class="avatar-edit">
+                <input type="file" id="imageUpload1" accept=".png, .jpg, .jpeg">
+                <label for="imageUpload1">
+                  Add cover photo
+                  <span><img src="assets/images/plus-grey.svg" alt=""></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="userDetails">
+
+            <div class="userInfo">
+              <div class="avatar-upload">
+                <div class="avatar-preview">
+                  <div id="imagePreview2">
+                  </div>
+                </div>
+                <div class="avatar-edit">
+                  <input type="file" id="imageUpload2" accept=".png, .jpg, .jpeg">
+                  <label for="imageUpload2">
+                    <span><img src="assets/images/camera.svg" alt=""></span>
+                  </label>
+                </div>
+              </div>
+              <div>
+                <h2>Mohammed Aldosari</h2>
+                <p>Technical Support</p>
+              </div>
+            </div>
+
+            <div class="userContact">
+              <a href="#">
+                <img src="assets/images/contact-call.svg" alt="">
+                <span>
+                  Mobile Number
+                  <strong>+962 797778566</strong>
+                </span>
+              </a>
+              <a href="#">
+                <img src="assets/images/contact-mail.svg" alt="">
+                <span>
+                  Email Address
+                  <strong>mohammed@hotmail.com</strong>
+                </span>
+              </a>
+              <a href="#">
+                <img src="assets/images/contact-location.svg" alt="">
+                <span>
+                  Location
+                  <strong>Riyadh, Saudi Arabia</strong>
+                </span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="userEditForm">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link " id="v-pills-Profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Profile"
+              type="button" role="tab" aria-controls="v-pills-Account" aria-selected="true">Profile</button>
+            <button class="nav-link active" id="v-pills-Account-tab" data-bs-toggle="pill"
+              data-bs-target="#v-pills-Account" type="button" role="tab" aria-controls="v-pills-Account"
+              aria-selected="false">Account</button>
+            <button class="nav-link" id="v-pills-Notifications-tab" data-bs-toggle="pill"
+              data-bs-target="#v-pills-Notifications" type="button" role="tab" aria-controls="v-pills-Notifications"
+              aria-selected="false">Notifications</button>
+            <button class="nav-link" id="v-pills-Active-sessions-tab" data-bs-toggle="pill"
+              data-bs-target="#v-pills-Active-sessions" type="button" role="tab" aria-controls="v-pills-Active-sessions"
+              aria-selected="false">Active sessions</button>
+            <button class="nav-link" id="v-pills-Active-sessions-tab" data-bs-toggle="pill"
+              data-bs-target="#v-pills-API" type="button" role="tab" aria-controls="v-pills-API"
+              aria-selected="false">API keys</button>
+          </div>
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade " id="v-pills-Profile" role="tabpanel" aria-labelledby="v-pills-Profile-tab">
+              <div class="form-content">
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Email Address </label>
+                      <input type="email" class="form-control" placeholder="Email Address" value="mohammed@hotmail.com">
+                    </div>
+                    <button class="btn btn-primary text-uppercase text-white fw-bold btn-sm px-3 me-0" disabled>
+                      Update email
+                    </button>
+                    <hr class="my-5" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Password <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="controls mb-3">
+                      <label class="form-label">Confirm Password <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" placeholder="Confirm Password ">
+                    </div>
+                    <hr class="my-5" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="deleteUserControl">
+                      <div>
+                        <span>Delete your account</span>
+                        <p>Permanently delete your Postman data.</p>
+                      </div>
+                      <button class="btn btn-danger text-white btn-sm px-3">
+                        Delete Account
+                      </button>
+                    </div>
+                    <hr class="my-5" />
+                  </div>
+                </div>
+                <button class="btn btn-primary text-white text-uppercase fw-bold px-3">
+                  Update account
+                </button>
+              </div>
+            </div>
+            <div class="tab-pane fade show active" id="v-pills-Account" role="tabpanel"
+              aria-labelledby="v-pills-Account-tab">
+              <div class="form-content">
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Email Address </label>
+                      <input type="email" class="form-control" placeholder="Email Address" value="mohammed@hotmail.com">
+                    </div>
+                    <button class="btn btn-primary text-uppercase text-white fw-bold btn-sm px-3 me-0" disabled>
+                      Update email
+                    </button>
+                    <hr class="my-5" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Password <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="controls mb-3">
+                      <label class="form-label">Confirm Password <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" placeholder="Confirm Password ">
+                    </div>
+                    <hr class="my-5" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="deleteUserControl">
+                      <div>
+                        <span>Delete your account</span>
+                        <p>Permanently delete your Postman data.</p>
+                      </div>
+                      <button class="btn btn-danger text-white btn-sm px-3">
+                        Delete Account
+                      </button>
+                    </div>
+                    <hr class="my-5" />
+                  </div>
+                </div>
+                <button class="btn btn-primary text-white text-uppercase fw-bold px-3">
+                  Update account
+                </button>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-Notifications" role="tabpanel"
+              aria-labelledby="v-pills-Notifications-tab">
+              <div class="form-content">
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Email Address </label>
+                      <input type="email" class="form-control" placeholder="Email Address" value="mohammed@hotmail.com">
+                    </div>
+                    <button class="btn btn-primary text-uppercase text-white fw-bold btn-sm px-3 me-0" disabled>
+                      Update email
+                    </button>
+                    <hr class="my-5" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Password <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="controls mb-3">
+                      <label class="form-label">Confirm Password <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" placeholder="Confirm Password ">
+                    </div>
+                    <hr class="my-5" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="deleteUserControl">
+                      <div>
+                        <span>Delete your account</span>
+                        <p>Permanently delete your Postman data.</p>
+                      </div>
+                      <button class="btn btn-danger text-white btn-sm px-3">
+                        Delete Account
+                      </button>
+                    </div>
+                    <hr class="my-5" />
+                  </div>
+                </div>
+                <button class="btn btn-primary text-white text-uppercase fw-bold px-3">
+                  Update account
+                </button>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-Active-sessions" role="tabpanel"
+              aria-labelledby="v-pills-Active-sessions-tab">
+              <div class="form-content">
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Email Address </label>
+                      <input type="email" class="form-control" placeholder="Email Address" value="mohammed@hotmail.com">
+                    </div>
+                    <button class="btn btn-primary text-uppercase text-white fw-bold btn-sm px-3 me-0" disabled>
+                      Update email
+                    </button>
+                    <hr class="my-5" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Password <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="controls mb-3">
+                      <label class="form-label">Confirm Password <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" placeholder="Confirm Password ">
+                    </div>
+                    <hr class="my-5" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="deleteUserControl">
+                      <div>
+                        <span>Delete your account</span>
+                        <p>Permanently delete your Postman data.</p>
+                      </div>
+                      <button class="btn btn-danger text-white btn-sm px-3">
+                        Delete Account
+                      </button>
+                    </div>
+                    <hr class="my-5" />
+                  </div>
+                </div>
+                <button class="btn btn-primary text-white text-uppercase fw-bold px-3">
+                  Update account
+                </button>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-API" role="tabpanel" aria-labelledby="v-pills-API-tab">
+              <div class="form-content">
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Email Address </label>
+                      <input type="email" class="form-control" placeholder="Email Address" value="mohammed@hotmail.com">
+                    </div>
+                    <button class="btn btn-primary text-uppercase text-white fw-bold btn-sm px-3 me-0" disabled>
+                      Update email
+                    </button>
+                    <hr class="my-5" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Password <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="controls mb-3">
+                      <label class="form-label">Confirm Password <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" placeholder="Confirm Password ">
+                    </div>
+                    <hr class="my-5" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="deleteUserControl">
+                      <div>
+                        <span>Delete your account</span>
+                        <p>Permanently delete your Postman data.</p>
+                      </div>
+                      <button class="btn btn-danger text-white btn-sm px-3">
+                        Delete Account
+                      </button>
+                    </div>
+                    <hr class="my-5" />
+                  </div>
+                </div>
+                <button class="btn btn-primary text-white text-uppercase fw-bold px-3">
+                  Update account
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+  </div>
+
+  <!-- Connector Modal -->
+  <div class="modal fade" id="addUser" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="addUserLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addUserLabel">Add User</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="modal-form">
+              <div class="row">
+                <div class="col-xl-6">
+                  <div class="controls mb-3">
+                    <label class="form-label">Username <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" placeholder="Username">
+                  </div>
+                  <div class="controls mb-3">
+                    <label class="form-label">Username <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" placeholder="Username">
+                  </div>
+                  <div class="controls mb-3">
+                    <label class="form-label">Confirm Password <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" placeholder="Confirm Password ">
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="avatar-upload">
+                    <div class="avatar-preview">
+                      <div id="imagePreview">
+                      </div>
+                    </div>
+                    <div class="avatar-edit">
+                      <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                      <label for="imageUpload">
+                        <img src="assets/images/plus-blue.svg" alt="">
+                        Upload Photo
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-12">
+                  <div class="row">
+                    <div class="col-xl-6">
+                      <div class="controls mb-3">
+                        <label class="form-label">First Name </label>
+                        <input type="text" class="form-control" placeholder="First Name ">
+                      </div>
+                    </div>
+                    <div class="col-xl-6">
+                      <div class="controls mb-3">
+                        <label class="form-label">Last Name </label>
+                        <input type="text" class="form-control" placeholder="Last Name ">
+                      </div>
+                    </div>
+                    <div class="col-xl-12">
+                      <div class="controls mb-3">
+                        <label class="form-label">Email Address </label>
+                        <input type="email" class="form-control" placeholder="Email Address ">
+                      </div>
+                    </div>
+                    <div class="col-xl-6">
+                      <div class="controls d-flex align-items-center mb-3">
+                        <label class="form-label me-5">Gender </label>
+                        <div class="checkbox_wrap d-flex ">
+                          <label class="checkbox-button me-4" for="choice1-1">
+                            <input type="radio" class="checkbox-button__input" id="choice1-1" name="exampleRadios"
+                              checked="">
+                            <span class="checkbox-button__control"></span>
+                            <span class="checkbox-button__label" for="choice1-1">Male</span>
+                          </label>
+                          <label class="checkbox-button" for="choice1-2">
+                            <input type="radio" class="checkbox-button__input" id="choice1-2" name="exampleRadios">
+                            <span class="checkbox-button__control"></span>
+                            <span class="checkbox-button__label" for="choice1-2">Female</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-12">
+                  <div class="row">
+                    <div class="col-xl-6">
+                      <div class="controls mb-3">
+                        <label class="form-label">Date of Birth </label>
+                        <input type="date" class="form-control" placeholder="Date of Birth ">
+                      </div>
+                    </div>
+                    <div class="col-xl-6">
+                      <div class="controls mb-3">
+                        <label class="form-label">Mobile </label>
+                        <input type="text" class="form-control" placeholder="Mobile ">
+                      </div>
+                    </div>
+                    <div class="col-xl-6">
+                      <div class="controls mb-3">
+                        <label class="form-label">Role <span class="text-danger">*</span> </label>
+                        <select name="1" id="1" class="form-select">
+                          <option>Select Roll</option>
+                          <option>1</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button id="liveToastBtn" type="button" class="btn btn-primary px-4" data-bs-dismiss="modal">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script> 
+
+</body>
+
+</html>

@@ -243,25 +243,57 @@ button {
   align-items: center;
   margin: auto;
 
+  @include media-breakpoint-down(sm) {
+    top: 80px;
+    right: 10px;
+    left: 10px;
+  }
+
   &.alert-success {
     border-color: $green;
+
+    .toast-body {
+      &::before {
+        background: url("#{$bgimage-path}check-alert.svg") no-repeat;
+      }
+    }
   }
 
   &.alert-danger {
     border-color: $red;
+
+    .toast-body {
+      &::before {
+        background: url("#{$bgimage-path}close-alert.svg") no-repeat;
+      }
+    }
   }
 
   &.alert-info {
     border-color: $blue;
+
+    .toast-body {
+      &::before {
+        background: url("#{$bgimage-path}info-alert.svg") no-repeat;
+      }
+    }
   }
 
   .toast-body {
     padding: 0;
-  }
+    position: relative;
+    display: flex;
+    align-items: center;
 
-  img {
-    margin: 0;
-    margin-right: 10px;
+    &::before {
+      content: "";
+      margin: 0;
+      margin-right: 10px;
+      background-size: cover;
+      min-height: 22px;
+      min-width: 22px;
+      display: inline-flex;
+    }
   }
 
   .btn-close {
@@ -272,5 +304,9 @@ button {
     padding: 0;
     margin-left: 50px;
     opacity: 1;
+
+    @include media-breakpoint-down(sm) {
+      margin-left: 20px;
+    }
   }
 }

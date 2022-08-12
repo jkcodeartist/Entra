@@ -122,29 +122,58 @@
         <div class="dropdown userDropdown">
           <a class="userDetail dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
             aria-expanded="false">
-            <img src="assets/images/user.png" alt="">
+            <img src="assets/images/user-img.png" alt="">
             <span>
               Mohammed Aldosari
               <p>Technical Support</p>
             </span>
           </a>
 
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <!-- item-->
-            <h6 class="dropdown-header">Welcome Aldosari!</h6>
-            <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i>
-              <span class="align-middle">Profile</span></a>
-            <a class="dropdown-item" href="#"><i
-                class="mdi mdi-message-text-outline text-muted fs-16 align-middle me-1"></i> <span
-                class="align-middle">Messages</span></a>
-            <a class="dropdown-item" href="#"><i class="mdi mdi-lifebuoy text-muted fs-16 align-middle me-1"></i> <span
-                class="align-middle">Help</span></a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#"><i class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i>
-              <span class="align-middle">Settings</span></a>
-            <a class="dropdown-item" href="#"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span
-                class="align-middle" data-key="t-logout">Logout</span></a>
-          </ul>
+          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+            <div class="dropdown-profile">
+              <img src="assets/images/user-img.png" class="img-fluid" alt="">
+              <div>
+                <h2>Mohammed Aldosari</h2>
+                <p>Technical Support</p>
+                <a href="#">
+                  <img src="assets/images/email.svg" alt="">
+                  mohammed@hotmail.com
+                </a>
+                <a href="#">
+                  <img src="assets/images/location.svg" alt="">
+                  Riyadh, Saudi Arabia
+                </a>
+              </div>
+            </div>
+            <div class="setting-profile">
+              <a href="#">
+                <span>
+                  <img src="assets/images/settings.svg" alt="">
+                </span>
+                Settiings
+              </a>
+              <a href="#">
+                <span>
+                  <img src="assets/images/log-history.svg" alt="">
+                </span>
+                Login History
+              </a>
+            </div>
+            <div class="user-controls">
+              <a href="Profile.html">
+                <span>
+                  <img src="assets/images/log-history.svg" alt="">
+                </span>
+                Edit Profile
+              </a>
+              <a href="Auth.html">
+                <span>
+                  <img src="assets/images/log-history.svg" alt="">
+                </span>
+                Log Out
+              </a>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -613,8 +642,8 @@
                     <input type="text" class="form-control" placeholder="Username">
                   </div>
                   <div class="controls mb-3">
-                    <label class="form-label">Username <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" placeholder="Username">
+                    <label class="form-label">Password <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" placeholder="Password">
                   </div>
                   <div class="controls mb-3">
                     <label class="form-label">Confirm Password <span class="text-danger">*</span></label>
@@ -716,8 +745,7 @@
   <!-- ALERT POPUP MANAGE -->
   <div id="liveToast" class="toast align-items-center alert alert-success" role="alert" aria-live="assertive"
     aria-atomic="true">
-    <div class="d-flex">
-      <img src="assets/images/check-alert.svg" alt="">
+    <div class="d-flex"> 
       <div class="toast-body">
         Your new user has been added successfully
       </div>
