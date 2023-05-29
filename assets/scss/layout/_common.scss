@@ -25,17 +25,16 @@ a:focus,
 a:visited {
   text-decoration: none;
   cursor: pointer;
-  transition: all .15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 input,
 button {
   outline: none;
-  transition: all .15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 .input-control {
-
   /* Input form Style */
 
   input {
@@ -53,7 +52,7 @@ button {
   input:valid {
     padding-top: 10px;
 
-    +label {
+    + label {
       font-size: 12px;
       color: $medGreyCol;
       top: 5px;
@@ -76,7 +75,6 @@ button {
     -webkit-transition: 0.2s ease all;
     transition: 0.2s ease all;
     pointer-events: none;
-
   }
 
   input:focus {
@@ -84,8 +82,8 @@ button {
   }
 }
 
-
 .checkbox_wrap {
+  gap: 16px;
 
   .checkbox-button {
     cursor: pointer;
@@ -93,8 +91,8 @@ button {
     align-items: center;
   }
 
-  input[type=checkbox],
-  input[type=radio] {
+  input[type="checkbox"],
+  input[type="radio"] {
     box-sizing: border-box;
     padding: 0;
   }
@@ -127,7 +125,7 @@ button {
     border-radius: 2px;
   }
 
-  .checkbox-button__input:checked+.checkbox-button__control:after {
+  .checkbox-button__input:checked + .checkbox-button__control:after {
     content: "";
     display: block;
     position: absolute;
@@ -139,16 +137,14 @@ button {
     border-radius: 2px;
   }
 
-  .checkbox-button__input:checked+.checkbox-button__control {
+  .checkbox-button__input:checked + .checkbox-button__control {
     border-color: $brandCol;
   }
 
   // .checkbox-button__control {
   //   transform: scale(0.75);
   // }
-
 }
-
 
 .mb-20 {
   margin-bottom: 20px;
@@ -198,7 +194,7 @@ button {
   }
 
   &.alert-danger {
-    background-color: #FFF7F7;
+    background-color: #fff7f7;
     color: $red;
     font-size: 14px;
   }
@@ -309,4 +305,142 @@ button {
       margin-left: 20px;
     }
   }
+}
+
+/*------------*/
+.form-area {
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(90, 116, 148, 0.3);
+  padding: 40px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-area .form-inner {
+  width: 100%;
+}
+.intl-tel-input,
+.iti {
+  width: 100%;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+input:focus {
+  outline: none;
+}
+#ui-datepicker-div {
+  display: none;
+  background-color: #fff;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+  margin-top: 0.25rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.ui-datepicker-calendar thead th {
+  padding: 0.25rem 0;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #78909c;
+}
+.ui-datepicker-calendar tbody td {
+  width: 2.5rem;
+  text-align: center;
+  padding: 0;
+}
+.ui-datepicker-calendar tbody td a {
+  display: block;
+  border-radius: 0.25rem;
+  line-height: 2rem;
+  transition: 0.3s all;
+  color: #546e7a;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+.ui-datepicker-calendar tbody td a:hover {
+  background-color: #e0f2f1;
+}
+.ui-datepicker-calendar tbody td a.ui-state-active {
+  background-color: #009688;
+  color: white;
+}
+.ui-datepicker-header a.ui-corner-all {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+  border-radius: 0.25rem;
+  transition: 0.3s all;
+}
+.ui-datepicker-header a.ui-corner-all:hover {
+  background-color: #eceff1;
+}
+.ui-datepicker-header a.ui-datepicker-prev {
+  left: 0;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==");
+  background-repeat: no-repeat;
+  background-size: 0.5rem;
+  background-position: 50%;
+  transform: rotate(180deg);
+}
+.ui-datepicker-header a.ui-datepicker-next {
+  right: 0;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==");
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: 50%;
+}
+.ui-datepicker-header a > span {
+  display: none;
+}
+.ui-datepicker-title {
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding-bottom: 0.25rem;
+}
+.ui-datepicker-week-col {
+  color: #78909c;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+.datepicker {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"> <g id="calendar" transform="translate(-5.411)"> <g id="Group_1829" data-name="Group 1829" transform="translate(5.411)"> <path id="Path_3373" data-name="Path 3373" d="M119.406,258.674a.432.432,0,0,0-.432-.432h-1.507a.432.432,0,0,0-.432.432v1.507a.432.432,0,0,0,.432.432h1.507a.432.432,0,0,0,.432-.432v-1.507Z" transform="translate(-112.847 -248.797)" fill="%23999"/> <path id="Path_3374" data-name="Path 3374" d="M216.041,258.674a.432.432,0,0,0-.432-.432H214.1a.432.432,0,0,0-.432.432v1.507a.432.432,0,0,0,.432.432h1.508a.432.432,0,0,0,.432-.432Z" transform="translate(-205.855 -248.797)" fill="%23999"/> <path id="Path_3375" data-name="Path 3375" d="M312.669,258.674a.432.432,0,0,0-.432-.432H310.73a.432.432,0,0,0-.432.432v1.507a.432.432,0,0,0,.432.432h1.507a.432.432,0,0,0,.432-.432Z" transform="translate(-298.858 -248.797)" fill="%23999"/> <path id="Path_3376" data-name="Path 3376" d="M119.406,355.307a.432.432,0,0,0-.432-.432h-1.507a.432.432,0,0,0-.432.432v1.507a.432.432,0,0,0,.432.432h1.507a.432.432,0,0,0,.432-.432v-1.507Z" transform="translate(-112.847 -341.971)" fill="%23999"/> <path id="Path_3377" data-name="Path 3377" d="M216.041,355.307a.432.432,0,0,0-.432-.432H214.1a.432.432,0,0,0-.432.432v1.507a.432.432,0,0,0,.432.432h1.508a.432.432,0,0,0,.432-.432Z" transform="translate(-205.855 -341.971)" fill="%23999"/> <path id="Path_3378" data-name="Path 3378" d="M312.669,355.307a.432.432,0,0,0-.432-.432H310.73a.432.432,0,0,0-.432.432v1.507a.432.432,0,0,0,.432.432h1.508a.432.432,0,0,0,.432-.432v-1.507Z" transform="translate(-298.858 -341.971)" fill="%23999"/> <path id="Path_3379" data-name="Path 3379" d="M21.809,54.15v2.162a1.793,1.793,0,0,1-1.823,1.765h-1.15A1.8,1.8,0,0,1,17,56.312v-2.17H11.82v2.17a1.8,1.8,0,0,1-1.834,1.765H8.836a1.793,1.793,0,0,1-1.823-1.765V54.15a1.632,1.632,0,0,0-1.6,1.6V68.42a1.634,1.634,0,0,0,1.65,1.611h14.7a1.636,1.636,0,0,0,1.65-1.611V55.75A1.632,1.632,0,0,0,21.809,54.15Zm-.534,13.481a.7.7,0,0,1-.713.693H8.229a.7.7,0,0,1-.713-.693V61.087a.7.7,0,0,1,.713-.693H20.561a.7.7,0,0,1,.713.693v6.544Z" transform="translate(-5.411 -52.031)" fill="%23999"/> <path id="Path_3380" data-name="Path 3380" d="M80.2,5.066h1.176a.646.646,0,0,0,.646-.646V.646A.646.646,0,0,0,81.372,0H80.2a.646.646,0,0,0-.646.646V4.42A.646.646,0,0,0,80.2,5.066Z" transform="translate(-76.769)" fill="%23999"/> <path id="Path_3381" data-name="Path 3381" d="M345.1,5.066h1.176a.646.646,0,0,0,.646-.646V.646A.646.646,0,0,0,346.28,0H345.1a.646.646,0,0,0-.646.646V4.42A.646.646,0,0,0,345.1,5.066Z" transform="translate(-331.739)" fill="%23999"/> </g> </g></svg>')
+    no-repeat right center;
+  background-position: right 15px center;
+}
+
+/**
+ * FilePond Custom Styles
+ */
+.filepond--root {
+  width: 100%;
+}
+
+.filepond--drop-label {
+  color: #4c4e53;
+}
+
+.filepond--label-action {
+  -webkit-text-decoration-color: #babdc0;
+  text-decoration-color: #babdc0;
+}
+
+.filepond--panel-root {
+  border-radius: 2em;
+  background-color: #edf0f4;
+  height: 1em;
 }

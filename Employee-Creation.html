@@ -7,6 +7,10 @@
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
     <title>Entra</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css"
+    />
     <link href="assets/css/custom.css" rel="stylesheet" />
     <link href="assets/css/developer.css" rel="stylesheet" />
   </head>
@@ -288,7 +292,13 @@
             <div class="heading">
               <h2 class="title">Users</h2>
               <div class="d-flex">
-                <button class="btn btn-primary btn-sm me-2">New Users</button>
+                <button
+                  class="btn btn-primary btn-sm me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#addUser"
+                >
+                  New Users
+                </button>
               </div>
             </div>
             <div class="search-box">
@@ -410,7 +420,9 @@
                 </ol>
               </nav>
             </div>
-            <div class="action-panel-right d-flex align-items-center text-nowrap ">
+            <div
+              class="action-panel-right d-flex align-items-center text-nowrap"
+            >
               <button class="btn p-0 btn-sm">
                 <img src="assets/images/refresh.svg" alt="" />
                 <span>Refresh</span>
@@ -418,7 +430,7 @@
               <button
                 class="btn btn-primary text-white btn-sm px-3 me-0"
                 data-bs-toggle="modal"
-                data-bs-target="#addUser"
+                data-bs-target="#disputeInitiation"
               >
                 <img
                   src="assets/images/plus.svg"
@@ -426,7 +438,20 @@
                   width="14"
                   alt=""
                 />
-                <span>New User</span>
+                <span>Dispute Initiation</span>
+              </button>
+              <button
+                class="btn btn-primary text-white btn-sm px-3 me-0 ms-2"
+                data-bs-toggle="modal"
+                data-bs-target="#insuranceClaim"
+              >
+                <img
+                  src="assets/images/plus.svg"
+                  height="14"
+                  width="14"
+                  alt=""
+                />
+                <span>Insurance Claim</span>
               </button>
             </div>
           </div>
@@ -463,7 +488,7 @@
                         <td>+966 876234756</td>
                         <td>Member</td>
                         <td>
-                          <div class="d-flex align-items-center text-nowrap ">
+                          <div class="d-flex align-items-center text-nowrap">
                             <button class="btn text-secondary p-0 btn-sm me-4">
                               <img src="assets/images/edit.svg" alt="" />
                               <span>Edit</span>
@@ -490,7 +515,7 @@
                         <td>+966 876234756</td>
                         <td>Member</td>
                         <td>
-                          <div class="d-flex align-items-center text-nowrap ">
+                          <div class="d-flex align-items-center text-nowrap">
                             <button class="btn text-secondary p-0 btn-sm me-4">
                               <img src="assets/images/edit.svg" alt="" />
                               <span>Edit</span>
@@ -517,7 +542,7 @@
                         <td>+966 876234756</td>
                         <td>Member</td>
                         <td>
-                          <div class="d-flex align-items-center text-nowrap ">
+                          <div class="d-flex align-items-center text-nowrap">
                             <button class="btn text-secondary p-0 btn-sm me-4">
                               <img src="assets/images/edit.svg" alt="" />
                               <span>Edit</span>
@@ -544,7 +569,7 @@
                         <td>+966 876234756</td>
                         <td>Member</td>
                         <td>
-                          <div class="d-flex align-items-center text-nowrap ">
+                          <div class="d-flex align-items-center text-nowrap">
                             <button class="btn text-secondary p-0 btn-sm me-4">
                               <img src="assets/images/edit.svg" alt="" />
                               <span>Edit</span>
@@ -571,7 +596,7 @@
                         <td>+966 876234756</td>
                         <td>Member</td>
                         <td>
-                          <div class="d-flex align-items-center text-nowrap ">
+                          <div class="d-flex align-items-center text-nowrap">
                             <button class="btn text-secondary p-0 btn-sm me-4">
                               <img src="assets/images/edit.svg" alt="" />
                               <span>Edit</span>
@@ -598,7 +623,7 @@
                         <td>+966 876234756</td>
                         <td>Member</td>
                         <td>
-                          <div class="d-flex align-items-center text-nowrap ">
+                          <div class="d-flex align-items-center text-nowrap">
                             <button class="btn text-secondary p-0 btn-sm me-4">
                               <img src="assets/images/edit.svg" alt="" />
                               <span>Edit</span>
@@ -625,7 +650,7 @@
                         <td>+966 876234756</td>
                         <td>Member</td>
                         <td>
-                          <div class="d-flex align-items-center text-nowrap ">
+                          <div class="d-flex align-items-center text-nowrap">
                             <button class="btn text-secondary p-0 btn-sm me-4">
                               <img src="assets/images/edit.svg" alt="" />
                               <span>Edit</span>
@@ -652,7 +677,7 @@
                         <td>+966 876234756</td>
                         <td>Member</td>
                         <td>
-                          <div class="d-flex align-items-center text-nowrap ">
+                          <div class="d-flex align-items-center text-nowrap">
                             <button class="btn text-secondary p-0 btn-sm me-4">
                               <img src="assets/images/edit.svg" alt="" />
                               <span>Edit</span>
@@ -679,7 +704,7 @@
                         <td>+966 876234756</td>
                         <td>Member</td>
                         <td>
-                          <div class="d-flex align-items-center text-nowrap ">
+                          <div class="d-flex align-items-center text-nowrap">
                             <button class="btn text-secondary p-0 btn-sm me-4">
                               <img src="assets/images/edit.svg" alt="" />
                               <span>Edit</span>
@@ -767,7 +792,7 @@
       >
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="addUserLabel">Add User</h5>
+            <h5 class="modal-title" id="addUserLabel">Employee Creation</h5>
             <button
               type="button"
               class="btn-close"
@@ -781,160 +806,219 @@
                 <div class="row">
                   <div class="col-xl-6">
                     <div class="controls mb-3">
-                      <label class="form-label"
-                        >Username <span class="text-danger">*</span></label
-                      >
+                      <label class="form-label">Employee Name</label>
                       <input
                         type="text"
                         class="form-control"
-                        placeholder="Username"
-                      />
-                    </div>
-                    <div class="controls mb-3">
-                      <label class="form-label"
-                        >Password <span class="text-danger">*</span></label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Password"
-                      />
-                    </div>
-                    <div class="controls mb-3">
-                      <label class="form-label"
-                        >Confirm Password
-                        <span class="text-danger">*</span></label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Confirm Password "
+                        placeholder="Employee Name"
                       />
                     </div>
                   </div>
                   <div class="col-xl-6">
-                    <div class="avatar-upload">
-                      <div class="avatar-preview">
-                        <div id="imagePreview"></div>
-                      </div>
-                      <div class="avatar-edit">
+                    <div class="controls mb-3">
+                      <label class="form-label">Employee ID</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Employee ID"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Employee ID Oracle</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Employee ID Oracle"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Phone Number</label>
+                      <div class="form-group">
                         <input
-                          type="file"
-                          id="imageUpload"
-                          accept=".png, .jpg, .jpeg"
+                          type="text"
+                          id="mobile_code"
+                          class="form-control"
+                          placeholder="Phone Number"
+                          name="name"
                         />
-                        <label for="imageUpload">
-                          <img src="assets/images/plus-blue.svg" alt="" />
-                          Upload Photo
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Email Address</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Email Address"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Nationality</label>
+                      <select class="form-control form-select">
+                        <option value="Nationality">Nationality</option>
+                        <option>Indian</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Creat Password</label>
+                      <div class="position-relative">
+                        <input
+                          id="password-field"
+                          type="password"
+                          class="form-control"
+                          name="password"
+                          value="secret"
+                        />
+                        <span
+                          toggle="#password-field"
+                          class="field-icon toggle-password"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="22"
+                            height="14"
+                            viewBox="0 0 22 14"
+                          >
+                            <g id="view" transform="translate(0 -91.866)">
+                              <circle
+                                id="Ellipse_305"
+                                data-name="Ellipse 305"
+                                cx="3.401"
+                                cy="3.401"
+                                r="3.401"
+                                transform="translate(7.599 95.467)"
+                                fill="#999"
+                              />
+                              <path
+                                id="Path_3372"
+                                data-name="Path 3372"
+                                d="M21.663,97.944c-2.6-3.1-6.544-6.078-10.663-6.078S2.94,94.849.338,97.944a1.432,1.432,0,0,0,0,1.847,21.9,21.9,0,0,0,3.857,3.593c4.613,3.306,8.989,3.313,13.611,0a21.9,21.9,0,0,0,3.857-3.593A1.433,1.433,0,0,0,21.663,97.944ZM11,94.2a4.668,4.668,0,1,1-4.742,4.668A4.71,4.71,0,0,1,11,94.2Z"
+                                fill="#999"
+                              />
+                            </g>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Date of Birth </label>
+                      <input
+                        class="form-control datepicker"
+                        placeholder="Date of Birth "
+                        id="datepicker"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-12">
+                    <div
+                      class="controls d-flex align-items-center text-nowrap mb-3"
+                    >
+                      <label class="form-label m-0 me-5">Gender </label>
+                      <div class="checkbox_wrap d-flex">
+                        <label class="checkbox-buttonme-4" for="choice1-1">
+                          <input
+                            type="radio"
+                            class="checkbox-button__input"
+                            id="choice1-1"
+                            name="exampleRadios"
+                            checked=""
+                          />
+                          <span class="checkbox-button__control"></span>
+                          <span class="checkbox-button__label" for="choice1-1"
+                            >Male</span
+                          >
+                        </label>
+                        <label class="checkbox-button" for="choice1-2">
+                          <input
+                            type="radio"
+                            class="checkbox-button__input"
+                            id="choice1-2"
+                            name="exampleRadios"
+                          />
+                          <span class="checkbox-button__control"></span>
+                          <span class="checkbox-button__label" for="choice1-2"
+                            >Female</span
+                          >
                         </label>
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-12">
-                    <div class="row">
-                      <div class="col-xl-6">
-                        <div class="controls mb-3">
-                          <label class="form-label">First Name </label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="First Name "
-                          />
-                        </div>
-                      </div>
-                      <div class="col-xl-6">
-                        <div class="controls mb-3">
-                          <label class="form-label">Last Name </label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Last Name "
-                          />
-                        </div>
-                      </div>
-                      <div class="col-xl-12">
-                        <div class="controls mb-3">
-                          <label class="form-label">Email Address </label>
-                          <input
-                            type="email"
-                            class="form-control"
-                            placeholder="Email Address "
-                          />
-                        </div>
-                      </div>
-                      <div class="col-xl-6">
-                        <div class="controls d-flex align-items-center text-nowrap  mb-3">
-                          <label class="form-label me-5">Gender </label>
-                          <div class="checkbox_wrap d-flex">
-                            <label class="checkbox-button me-4" for="choice1-1">
-                              <input
-                                type="radio"
-                                class="checkbox-button__input"
-                                id="choice1-1"
-                                name="exampleRadios"
-                                checked=""
-                              />
-                              <span class="checkbox-button__control"></span>
-                              <span
-                                class="checkbox-button__label"
-                                for="choice1-1"
-                                >Male</span
-                              >
-                            </label>
-                            <label class="checkbox-button" for="choice1-2">
-                              <input
-                                type="radio"
-                                class="checkbox-button__input"
-                                id="choice1-2"
-                                name="exampleRadios"
-                              />
-                              <span class="checkbox-button__control"></span>
-                              <span
-                                class="checkbox-button__label"
-                                for="choice1-2"
-                                >Female</span
-                              >
-                            </label>
-                          </div>
-                        </div>
-                      </div>
+
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Start Date </label>
+                      <input
+                        class="form-control datepicker"
+                        placeholder="Start Date "
+                        id="datepicker"
+                        autocomplete="off"
+                      />
                     </div>
                   </div>
-                  <div class="col-xl-12">
-                    <div class="row">
-                      <div class="col-xl-6">
-                        <div class="controls mb-3">
-                          <label class="form-label">Date of Birth </label>
-                          <input
-                            type="date"
-                            class="form-control"
-                            placeholder="Date of Birth "
-                          />
-                        </div>
-                      </div>
-                      <div class="col-xl-6">
-                        <div class="controls mb-3">
-                          <label class="form-label">Mobile </label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Mobile "
-                          />
-                        </div>
-                      </div>
-                      <div class="col-xl-6">
-                        <div class="controls mb-3">
-                          <label class="form-label"
-                            >Role <span class="text-danger">*</span>
-                          </label>
-                          <select name="1" id="1" class="form-select">
-                            <option>Select Roll</option>
-                            <option>1</option>
-                          </select>
-                        </div>
-                      </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">End Date </label>
+                      <input
+                        class="form-control datepicker"
+                        placeholder="End Date "
+                        id="datepicker"
+                        autocomplete="off"
+                      />
                     </div>
                   </div>
+                  <!------>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Creation Date</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Creation Date"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Marital Status</label>
+                      <select class="form-control form-select">
+                        <option value="Marital Status">
+                          Select Marital Status
+                        </option>
+                        <option>Indian</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Last Updated</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Last Updated"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">User Last Logon</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="User Last Logon"
+                      />
+                    </div>
+                  </div>
+                  <!------>
                 </div>
               </div>
             </form>
@@ -953,7 +1037,406 @@
               class="btn btn-primary px-4"
               data-bs-dismiss="modal"
             >
-              Add
+              Create
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="insuranceClaim"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="insuranceClaim"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="insuranceClaim">Insurance Claim</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="modal-form">
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Dispute Number</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Dispute Number"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Insurance Claim Number</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Insurance Claim Number"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Claim Number Oracle</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Claim Number Oracle"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Dispute Category</label>
+                      <select class="form-control form-select">
+                        <option value="Dispute Category">
+                          Dispute Category
+                        </option>
+                        <option>Indian</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Outlet</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Outlet"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Claim Date</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Claim Date"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Insurance Company</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Insurance Company"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Policy Number</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Policy Number"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Accident Date </label>
+                      <input
+                        class="form-control datepicker"
+                        placeholder="Accident Date "
+                        id="datepicker"
+                        autocomplete="off"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Jobcard Number</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Jobcard Number"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-12">
+                    <div class="controls mb-3">
+                      <label class="form-label">Accident Place</label>
+                      <textarea
+                        name=""
+                        id=""
+                        cols="30"
+                        rows="3"
+                        placeholder="Accident Place"
+                        class="form-control"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <!------>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button
+              id="liveToastBtn"
+              type="button"
+              class="btn btn-primary px-4"
+              data-bs-dismiss="modal"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="disputeInitiation"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="disputeInitiation"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="disputeInitiation">
+              Dispute Initiation
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="modal-form">
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Dispute Category</label>
+                      <select class="form-control form-select">
+                        <option value="Dispute Category">
+                          Dispute Category
+                        </option>
+                        <option>Indian</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Registration Number</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Registration Number"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Dispute Number</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Dispute Number"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Dispute Status</label>
+                      <select class="form-control form-select">
+                        <option value="Dispute Status">Dispute Status</option>
+                        <option>Indian</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Outlet</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Outlet"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Claim Date</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Claim Date"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Outlet</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Outlet"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Fleet Number (VIN)</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Fleet Number (VIN)"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-12">
+                    <div class="controls mb-3">
+                      <label class="form-label">Description</label>
+                      <textarea
+                        name=""
+                        id=""
+                        cols="30"
+                        rows="3"
+                        placeholder="Description"
+                        class="form-control"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Dispute Open Date </label>
+                      <input
+                        class="form-control datepicker"
+                        placeholder="Dispute Open Date "
+                        id="datepicker"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Dispute Close Date </label>
+                      <input
+                        class="form-control datepicker"
+                        placeholder="Dispute Close Date "
+                        id="datepicker"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-12">
+                    <div class="controls mb-3">
+                      <label class="form-label">Remarks & Actions</label>
+                      <textarea
+                        name=""
+                        id=""
+                        cols="30"
+                        rows="3"
+                        placeholder="Remarks & Actions"
+                        class="form-control"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Date of Accident </label>
+                      <input
+                        class="form-control datepicker"
+                        placeholder="Date of Accident "
+                        id="datepicker"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="controls mb-3">
+                      <label class="form-label">Damage</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Damage"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-12">
+                    <div class="controls mb-3">
+                      <label class="form-label">Attachments</label>
+                      <div class="form-group attachmentsImages">
+                        <div class="dropzone-wrapper">
+                          <div class="dropzone-desc">
+                            <img src="assets/images/upload.svg" alt="" />
+                            <p>
+                              Drop files to upload or
+                              <span class="browseLink">Browse</span>
+                            </p>
+                          </div>
+                          <input type="file" name="img_logo" class="dropzone" />
+                        </div>
+                        <div class="preview-zone hidden">
+                          <div class="box box-solid">
+                            <div class="box-body"></div>
+                            <button
+                              type="button"
+                              class="btn remove-preview p-0"
+                            >
+                              <img
+                                src="assets/images/delete-black.svg"
+                                alt=""
+                              />
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!------>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button
+              id="liveToastBtn"
+              type="button"
+              class="btn btn-primary px-4"
+              data-bs-dismiss="modal"
+            >
+              Submit
             </button>
           </div>
         </div>
@@ -983,6 +1466,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
     <script src="assets/js/custom.js"></script>
     <script>
       //---ALERT POPUP MANAGE-----------------------------------------------------------------------------
@@ -995,6 +1480,34 @@
           toast.show();
         });
       }
+    </script>
+    <script>
+      // -----Country Code Selection
+      $("#mobile_code").intlTelInput({
+        initialCountry: "in",
+        separateDialCode: true,
+        // utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
+      });
+    </script>
+    <script>
+      $(".toggle-password").click(function () {
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        var input = $($(this).attr("toggle"));
+        if (input.attr("type") == "password") {
+          input.attr("type", "text");
+        } else {
+          input.attr("type", "password");
+        }
+      });
+    </script>
+    <script>
+      // INCLUDE JQUERY & JQUERY UI 1.12.1
+      $(function () {
+        $(".datepicker").datepicker({
+          dateFormat: "dd-mm-yy",
+          duration: "fast",
+        });
+      });
     </script>
   </body>
 </html>

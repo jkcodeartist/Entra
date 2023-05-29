@@ -28,7 +28,7 @@ function toggleFullscreen(elem) {
   }
 }
 
-document.getElementById("btnFullscreen").addEventListener("click", function() {
+document.getElementById("btnFullscreen").addEventListener("click", function () {
   toggleFullscreen();
 });
 
@@ -42,7 +42,7 @@ document.getElementById("btnFullscreen").addEventListener("click", function() {
 
 if ($(window).width() <= 1199) {
   $(".search-box").hide();
-  $(".control-panel").click(function() {
+  $(".control-panel").click(function () {
     $(".control-panel").toggleClass("active", 1000);
     $(".search-box").slideToggle();
   });
@@ -50,20 +50,20 @@ if ($(window).width() <= 1199) {
 
 //--------------------------------------------------------------------------------
 
-$('a[href="#search"]').click(function() {
+$('a[href="#search"]').click(function () {
   event.preventDefault();
   $("#search-box").addClass("-open");
-  setTimeout(function() {
+  setTimeout(function () {
     inputSearch.focus();
   }, 800);
 });
 
-$('a[href="#close"]').click(function() {
+$('a[href="#close"]').click(function () {
   event.preventDefault();
   $("#search-box").removeClass("-open");
 });
 
-$(document).keyup(function(e) {
+$(document).keyup(function (e) {
   if (e.keyCode == 27) {
     // escape key maps to keycode `27`
     $("#search-box").removeClass("-open");
@@ -71,8 +71,8 @@ $(document).keyup(function(e) {
 });
 
 //--------------------------------------------------------------------------------
-$(document).ready(function() {
-  $(".burgermenu").click(function() {
+$(document).ready(function () {
+  $(".burgermenu").click(function () {
     $(this).toggleClass("open");
     $("aside").toggleClass("open");
   });
@@ -83,7 +83,7 @@ function readFile(input) {
   if (input.files && input.files[0]) {
     var reader = new FileReader();
 
-    reader.onload = function(e) {
+    reader.onload = function (e) {
       var htmlPreview =
         '<img width="200" src="' +
         e.target.result +
@@ -92,10 +92,7 @@ function readFile(input) {
         input.files[0].name +
         "</p>";
       var wrapperZone = $(input).parent();
-      var previewZone = $(input)
-        .parent()
-        .parent()
-        .find(".preview-zone");
+      var previewZone = $(input).parent().parent().find(".preview-zone");
       var boxZone = $(input)
         .parent()
         .parent()
@@ -114,37 +111,30 @@ function readFile(input) {
 }
 
 function reset(e) {
-  e.wrap("<form>")
-    .closest("form")
-    .get(0)
-    .reset();
+  e.wrap("<form>").closest("form").get(0).reset();
   e.unwrap();
 }
 
-$(".dropzone").change(function() {
+$(".dropzone").change(function () {
   readFile(this);
 });
 
-$(".dropzone-wrapper").on("dragover", function(e) {
+$(".dropzone-wrapper").on("dragover", function (e) {
   e.preventDefault();
   e.stopPropagation();
   $(this).addClass("dragover");
 });
 
-$(".dropzone-wrapper").on("dragleave", function(e) {
+$(".dropzone-wrapper").on("dragleave", function (e) {
   e.preventDefault();
   e.stopPropagation();
   $(this).removeClass("dragover");
 });
 
-$(".remove-preview").on("click", function() {
-  var boxZone = $(this)
-    .parents(".preview-zone")
-    .find(".box-body");
+$(".remove-preview").on("click", function () {
+  var boxZone = $(this).parents(".preview-zone").find(".box-body");
   var previewZone = $(this).parents(".preview-zone");
-  var dropzone = $(this)
-    .parents(".form-group")
-    .find(".dropzone");
+  var dropzone = $(this).parents(".form-group").find(".dropzone");
   boxZone.empty();
   previewZone.addClass("hidden");
   reset(dropzone);
@@ -154,7 +144,7 @@ $(".remove-preview").on("click", function() {
 function readURL(input) {
   if (input.files && input.files[0]) {
     var reader = new FileReader();
-    reader.onload = function(e) {
+    reader.onload = function (e) {
       $("#imagePreview").css(
         "background-image",
         "url(" + e.target.result + ")"
@@ -165,7 +155,7 @@ function readURL(input) {
     reader.readAsDataURL(input.files[0]);
   }
 }
-$("#imageUpload").change(function() {
+$("#imageUpload").change(function () {
   readURL(this);
 });
 
@@ -173,7 +163,7 @@ $("#imageUpload").change(function() {
 function readURL(input) {
   if (input.files && input.files[0]) {
     var reader = new FileReader();
-    reader.onload = function(e) {
+    reader.onload = function (e) {
       $("#imagePreview1").css(
         "background-image",
         "url(" + e.target.result + ")"
@@ -184,7 +174,7 @@ function readURL(input) {
     reader.readAsDataURL(input.files[0]);
   }
 }
-$("#imageUpload1").change(function() {
+$("#imageUpload1").change(function () {
   readURL(this);
 });
 
@@ -192,7 +182,7 @@ $("#imageUpload1").change(function() {
 function readURL(input) {
   if (input.files && input.files[0]) {
     var reader = new FileReader();
-    reader.onload = function(e) {
+    reader.onload = function (e) {
       $("#imagePreview2").css(
         "background-image",
         "url(" + e.target.result + ")"
@@ -203,6 +193,53 @@ function readURL(input) {
     reader.readAsDataURL(input.files[0]);
   }
 }
-$("#imageUpload2").change(function() {
+$("#imageUpload2").change(function () {
   readURL(this);
+});
+
+//---Slider -----------------------------------------------------------------------------
+$(".slider-for").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: ".slider-nav",
+});
+$(".slider-nav").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: ".slider-for",
+  dots: false,
+  arrows: false,
+  focusOnSelect: true,
+  verticalSwiping: true,
+  vertical: false,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        vertical: false,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        vertical: false,
+      },
+    },
+    {
+      breakpoint: 580,
+      settings: {
+        vertical: false,
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 380,
+      settings: {
+        vertical: false,
+        slidesToShow: 2,
+      },
+    },
+  ],
 });

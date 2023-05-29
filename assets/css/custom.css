@@ -12624,6 +12624,9 @@ button {
   outline: none;
 }
 
+.checkbox_wrap {
+  gap: 16px;
+}
 .checkbox_wrap .checkbox-button {
   cursor: pointer;
   display: -webkit-inline-box;
@@ -12731,7 +12734,7 @@ button {
   margin-right: 10px;
 }
 .alert.alert-danger {
-  background-color: #FFF7F7;
+  background-color: #fff7f7;
   color: #dc3545;
   font-size: 14px;
 }
@@ -12838,13 +12841,184 @@ button {
   }
 }
 
+/*------------*/
+.form-area {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 5px 10px rgba(90, 116, 148, 0.3);
+          box-shadow: 0px 5px 10px rgba(90, 116, 148, 0.3);
+  padding: 40px;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-area .form-inner {
+  width: 100%;
+}
+
+.intl-tel-input,
+.iti {
+  width: 100%;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+#ui-datepicker-div {
+  display: none;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+  margin-top: 0.25rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.ui-datepicker-calendar thead th {
+  padding: 0.25rem 0;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #78909c;
+}
+
+.ui-datepicker-calendar tbody td {
+  width: 2.5rem;
+  text-align: center;
+  padding: 0;
+}
+
+.ui-datepicker-calendar tbody td a {
+  display: block;
+  border-radius: 0.25rem;
+  line-height: 2rem;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+  color: #546e7a;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.ui-datepicker-calendar tbody td a:hover {
+  background-color: #e0f2f1;
+}
+
+.ui-datepicker-calendar tbody td a.ui-state-active {
+  background-color: #009688;
+  color: white;
+}
+
+.ui-datepicker-header a.ui-corner-all {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+  border-radius: 0.25rem;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.ui-datepicker-header a.ui-corner-all:hover {
+  background-color: #eceff1;
+}
+
+.ui-datepicker-header a.ui-datepicker-prev {
+  left: 0;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==");
+  background-repeat: no-repeat;
+  background-size: 0.5rem;
+  background-position: 50%;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.ui-datepicker-header a.ui-datepicker-next {
+  right: 0;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==");
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: 50%;
+}
+
+.ui-datepicker-header a > span {
+  display: none;
+}
+
+.ui-datepicker-title {
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding-bottom: 0.25rem;
+}
+
+.ui-datepicker-week-col {
+  color: #78909c;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.datepicker {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"> <g id="calendar" transform="translate(-5.411)"> <g id="Group_1829" data-name="Group 1829" transform="translate(5.411)"> <path id="Path_3373" data-name="Path 3373" d="M119.406,258.674a.432.432,0,0,0-.432-.432h-1.507a.432.432,0,0,0-.432.432v1.507a.432.432,0,0,0,.432.432h1.507a.432.432,0,0,0,.432-.432v-1.507Z" transform="translate(-112.847 -248.797)" fill="%23999"/> <path id="Path_3374" data-name="Path 3374" d="M216.041,258.674a.432.432,0,0,0-.432-.432H214.1a.432.432,0,0,0-.432.432v1.507a.432.432,0,0,0,.432.432h1.508a.432.432,0,0,0,.432-.432Z" transform="translate(-205.855 -248.797)" fill="%23999"/> <path id="Path_3375" data-name="Path 3375" d="M312.669,258.674a.432.432,0,0,0-.432-.432H310.73a.432.432,0,0,0-.432.432v1.507a.432.432,0,0,0,.432.432h1.507a.432.432,0,0,0,.432-.432Z" transform="translate(-298.858 -248.797)" fill="%23999"/> <path id="Path_3376" data-name="Path 3376" d="M119.406,355.307a.432.432,0,0,0-.432-.432h-1.507a.432.432,0,0,0-.432.432v1.507a.432.432,0,0,0,.432.432h1.507a.432.432,0,0,0,.432-.432v-1.507Z" transform="translate(-112.847 -341.971)" fill="%23999"/> <path id="Path_3377" data-name="Path 3377" d="M216.041,355.307a.432.432,0,0,0-.432-.432H214.1a.432.432,0,0,0-.432.432v1.507a.432.432,0,0,0,.432.432h1.508a.432.432,0,0,0,.432-.432Z" transform="translate(-205.855 -341.971)" fill="%23999"/> <path id="Path_3378" data-name="Path 3378" d="M312.669,355.307a.432.432,0,0,0-.432-.432H310.73a.432.432,0,0,0-.432.432v1.507a.432.432,0,0,0,.432.432h1.508a.432.432,0,0,0,.432-.432v-1.507Z" transform="translate(-298.858 -341.971)" fill="%23999"/> <path id="Path_3379" data-name="Path 3379" d="M21.809,54.15v2.162a1.793,1.793,0,0,1-1.823,1.765h-1.15A1.8,1.8,0,0,1,17,56.312v-2.17H11.82v2.17a1.8,1.8,0,0,1-1.834,1.765H8.836a1.793,1.793,0,0,1-1.823-1.765V54.15a1.632,1.632,0,0,0-1.6,1.6V68.42a1.634,1.634,0,0,0,1.65,1.611h14.7a1.636,1.636,0,0,0,1.65-1.611V55.75A1.632,1.632,0,0,0,21.809,54.15Zm-.534,13.481a.7.7,0,0,1-.713.693H8.229a.7.7,0,0,1-.713-.693V61.087a.7.7,0,0,1,.713-.693H20.561a.7.7,0,0,1,.713.693v6.544Z" transform="translate(-5.411 -52.031)" fill="%23999"/> <path id="Path_3380" data-name="Path 3380" d="M80.2,5.066h1.176a.646.646,0,0,0,.646-.646V.646A.646.646,0,0,0,81.372,0H80.2a.646.646,0,0,0-.646.646V4.42A.646.646,0,0,0,80.2,5.066Z" transform="translate(-76.769)" fill="%23999"/> <path id="Path_3381" data-name="Path 3381" d="M345.1,5.066h1.176a.646.646,0,0,0,.646-.646V.646A.646.646,0,0,0,346.28,0H345.1a.646.646,0,0,0-.646.646V4.42A.646.646,0,0,0,345.1,5.066Z" transform="translate(-331.739)" fill="%23999"/> </g> </g></svg>') no-repeat right center;
+  background-position: right 15px center;
+}
+
+/**
+ * FilePond Custom Styles
+ */
+.filepond--root {
+  width: 100%;
+}
+
+.filepond--drop-label {
+  color: #4c4e53;
+}
+
+.filepond--label-action {
+  -webkit-text-decoration-color: #babdc0;
+  text-decoration-color: #babdc0;
+}
+
+.filepond--panel-root {
+  border-radius: 2em;
+  background-color: #edf0f4;
+  height: 1em;
+}
+
 .btn {
   color: #fff;
   border-radius: 5px;
   -webkit-box-shadow: none;
           box-shadow: none;
-  min-height: 50px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 22px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -12969,6 +13143,10 @@ button:focus, button:hover {
   .modal-footer .btn {
     margin: 0 5px;
   }
+}
+
+.modal-dialog-scrollable .modal-body {
+  overflow: hidden auto;
 }
 
 /**
@@ -14331,8 +14509,7 @@ a[href="#search"] {
 
 aside {
   background: #F7F7F7;
-  min-width: 30px;
-  width: 130px;
+  min-width: 130px;
   height: 100%;
   overflow: auto;
   max-height: 100%;
@@ -14464,11 +14641,13 @@ main {
 @media (max-width: 1599.98px) {
   .control-panel {
     min-width: 300px;
+    max-width: 300px;
   }
 }
 @media (max-width: 1199.98px) {
   .control-panel {
     min-width: 100%;
+    max-width: 100%;
     width: 100%;
     height: auto;
   }
@@ -14513,9 +14692,10 @@ main {
 }
 
 .search-box {
-  height: calc(100% - 60px);
+  height: calc(100% - 80px);
   background: #fff;
   padding: 20px;
+  overflow-y: auto;
 }
 .search-box .form-control {
   margin-bottom: 20px;
@@ -14630,6 +14810,7 @@ main {
   height: calc(100% - 60px);
   background: #fff;
   padding: 20px;
+  overflow: hidden;
 }
 @media (max-width: 1199.98px) {
   .contentPanel {
@@ -14695,6 +14876,8 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
+  max-width: 100%;
+  overflow: hidden;
 }
 @media (max-width: 1199.98px) {
   .main-wrapper {
@@ -14712,6 +14895,7 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
+  max-width: calc(100% - 130px);
 }
 @media (max-width: 1199.98px) {
   .content-wrapper {
@@ -14924,7 +15108,7 @@ main {
   border-radius: 50%;
 }
 .planning-select .status.active {
-  background: #4FA0E5;
+  background: #4fa0e5;
 }
 
 .listIcon li {
@@ -14992,7 +15176,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #F5FAFC;
+  background: #f5fafc;
 }
 .dropzone-desc img {
   margin-bottom: 10px;
@@ -15051,6 +15235,10 @@ main {
 }
 .preview-zone .remove-preview {
   display: block;
+}
+
+.attachmentsImages .preview-zone .box .box-body img {
+  border: 0;
 }
 
 .browseLink {
@@ -15315,23 +15503,11 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-@media (max-width: 1599.98px) {
-  .userProfile .userContact {
-    padding: 20px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background: #f5f5f5;
-  }
-}
-@media (max-width: 991.98px) {
-  .userProfile .userContact {
-    padding: 20px 10px;
-  }
+  gap: 20px;
 }
 @media (max-width: 767.98px) {
   .userProfile .userContact {
+    padding: 20px 10px;
     display: block;
   }
 }
@@ -15344,6 +15520,8 @@ main {
       -ms-flex-align: center;
           align-items: center;
   color: #555555;
+  font-size: 14px;
+  line-height: 19px;
 }
 @media (max-width: 1599.98px) {
   .userProfile .userContact a {
@@ -15438,6 +15616,24 @@ main {
 .userEditForm .tab-content .tab-pane {
   padding: 0;
 }
+.userEditForm .title {
+  font-size: 18px;
+  color: #161615;
+  margin-bottom: 15px;
+}
+.userEditForm table tr td {
+  font-size: 14px !important;
+}
+.userEditForm .form-check-input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+.userEditForm .form-check-input:checked {
+  background-color: #287AD9;
+  border-color: #287AD9;
+}
 
 .deleteUserControl {
   display: -webkit-box;
@@ -15470,6 +15666,215 @@ main {
   }
 }
 
+.notificationWrapper .daysNotify {
+  margin-bottom: 40px;
+}
+.notificationWrapper .daysNotify h2, .notificationWrapper .daysNotify .h2 {
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+.notificationWrapper .daysNotify li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  color: #161615;
+}
+.notificationWrapper .daysNotify li a:hover {
+  background-color: #F7F7F7;
+}
+.notificationWrapper .daysNotify li:last-child {
+  margin-bottom: 0;
+}
+.notificationWrapper .daysNotify li img {
+  height: 44px;
+  width: 44px;
+}
+.notificationWrapper .daysNotify li.active h3, .notificationWrapper .daysNotify li.active .h3 {
+  color: #f6931e;
+}
+.notificationWrapper .daysNotify li.active .timeNotify::after {
+  content: "";
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #f6931e;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.notificationWrapper .daysNotify .msgNotify {
+  font-size: 14px;
+}
+.notificationWrapper .daysNotify .msgNotify h3, .notificationWrapper .daysNotify .msgNotify .h3 {
+  font-size: 16px;
+}
+.notificationWrapper .daysNotify .msgNotify p {
+  color: #555555;
+}
+.notificationWrapper .daysNotify .timeNotify {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #999999;
+  gap: 15px;
+}
+
+.vehicleAccordian.search-box .list-group .accordion .accordion-item .accordion-button {
+  font-weight: 400;
+}
+.vehicleAccordian.search-box .list-group .accordion .accordion-item .accordion-button:hover::before {
+  display: none !important;
+}
+.vehicleAccordian.search-box .list-group .accordion .accordion-item .accordion-body {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.vehicleAccordian.search-box .list-group .accordion .accordion-item .swatches {
+  text-align: center;
+  font-size: 13px;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+.vehicleAccordian.search-box .list-group .accordion .accordion-item .swatch {
+  cursor: pointer;
+  display: block;
+}
+.vehicleAccordian.search-box .list-group .accordion .accordion-item .swatch span {
+  border-radius: 50px;
+  display: inline-block;
+  height: 29px;
+  width: 29px;
+  text-indent: -9999px;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.vehicleAccordian.search-box .list-group .accordion .accordion-item .swatch input {
+  display: none;
+}
+.vehicleAccordian.search-box .list-group .accordion .accordion-item .swatch input:checked ~ span {
+  background: url('data:image/svg+xml,<svg id="check" xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12"> <path id="Path_3279" data-name="Path 3279" d="M7.951,15.975a.75.75,0,0,1-1.083,0L2.544,11.519a1.208,1.208,0,0,1,0-1.674l.541-.558a1.125,1.125,0,0,1,1.624,0l2.7,2.782,7.3-7.516a1.125,1.125,0,0,1,1.624,0l.541.558a1.208,1.208,0,0,1,0,1.674Z" transform="translate(-2.208 -4.207)" fill="%23fff"/></svg>') no-repeat center;
+}
+.vehicleAccordian.search-box .list-group .accordion .accordion-item .swatch--red span {
+  background-color: #e57373;
+}
+.vehicleAccordian.search-box .list-group .accordion .accordion-item .swatch--red input:checked ~ span {
+  background: #e57373 url('data:image/svg+xml,<svg id="check" xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12"> <path id="Path_3279" data-name="Path 3279" d="M7.951,15.975a.75.75,0,0,1-1.083,0L2.544,11.519a1.208,1.208,0,0,1,0-1.674l.541-.558a1.125,1.125,0,0,1,1.624,0l2.7,2.782,7.3-7.516a1.125,1.125,0,0,1,1.624,0l.541.558a1.208,1.208,0,0,1,0,1.674Z" transform="translate(-2.208 -4.207)" fill="%23fff"/></svg>') no-repeat center;
+}
+.vehicleAccordian.search-box .list-group .accordion .accordion-item .swatch--green span {
+  background-color: #81c784;
+}
+.vehicleAccordian.search-box .list-group .accordion .accordion-item .swatch--green input:checked ~ span {
+  background: #81c784 url('data:image/svg+xml,<svg id="check" xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12"> <path id="Path_3279" data-name="Path 3279" d="M7.951,15.975a.75.75,0,0,1-1.083,0L2.544,11.519a1.208,1.208,0,0,1,0-1.674l.541-.558a1.125,1.125,0,0,1,1.624,0l2.7,2.782,7.3-7.516a1.125,1.125,0,0,1,1.624,0l.541.558a1.208,1.208,0,0,1,0,1.674Z" transform="translate(-2.208 -4.207)" fill="%23fff"/></svg>') no-repeat center;
+}
+.vehicleAccordian.search-box .list-group .accordion .accordion-item .swatch--blue span {
+  background-color: #64b5f6;
+}
+.vehicleAccordian.search-box .list-group .accordion .accordion-item .swatch--blue input:checked ~ span {
+  background: #64b5f6 url('data:image/svg+xml,<svg id="check" xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12"> <path id="Path_3279" data-name="Path 3279" d="M7.951,15.975a.75.75,0,0,1-1.083,0L2.544,11.519a1.208,1.208,0,0,1,0-1.674l.541-.558a1.125,1.125,0,0,1,1.624,0l2.7,2.782,7.3-7.516a1.125,1.125,0,0,1,1.624,0l.541.558a1.208,1.208,0,0,1,0,1.674Z" transform="translate(-2.208 -4.207)" fill="%23fff"/></svg>') no-repeat center;
+}
+.vehicleAccordian.search-box .list-group .accordion .accordion-item .swatch--black span {
+  background-color: #212121;
+}
+.vehicleAccordian.search-box .list-group .accordion .accordion-item .swatch--black input:checked ~ span {
+  background: #212121 url('data:image/svg+xml,<svg id="check" xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12"> <path id="Path_3279" data-name="Path 3279" d="M7.951,15.975a.75.75,0,0,1-1.083,0L2.544,11.519a1.208,1.208,0,0,1,0-1.674l.541-.558a1.125,1.125,0,0,1,1.624,0l2.7,2.782,7.3-7.516a1.125,1.125,0,0,1,1.624,0l.541.558a1.208,1.208,0,0,1,0,1.674Z" transform="translate(-2.208 -4.207)" fill="%23fff"/></svg>') no-repeat center;
+}
+.vehicleAccordian.search-box .list-group .accordion .accordion-item .swatch--white span {
+  background-color: #eeeeee;
+}
+.vehicleAccordian.search-box .list-group .accordion .accordion-item .swatch--white input:checked ~ span {
+  background: #eeeeee url('data:image/svg+xml,<svg id="check" xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12"> <path id="Path_3279" data-name="Path 3279" d="M7.951,15.975a.75.75,0,0,1-1.083,0L2.544,11.519a1.208,1.208,0,0,1,0-1.674l.541-.558a1.125,1.125,0,0,1,1.624,0l2.7,2.782,7.3-7.516a1.125,1.125,0,0,1,1.624,0l.541.558a1.208,1.208,0,0,1,0,1.674Z" transform="translate(-2.208 -4.207)" fill="%23fff"/></svg>') no-repeat center;
+}
+.vehicleAccordian.search-box .list-group .accordion .accordion-item .swatch--colorless span {
+  background-color: #9e9e9e;
+}
+.vehicleAccordian.search-box .list-group .accordion .accordion-item .swatch--colorless input:checked ~ span {
+  background: #9e9e9e url('data:image/svg+xml,<svg id="check" xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12"> <path id="Path_3279" data-name="Path 3279" d="M7.951,15.975a.75.75,0,0,1-1.083,0L2.544,11.519a1.208,1.208,0,0,1,0-1.674l.541-.558a1.125,1.125,0,0,1,1.624,0l2.7,2.782,7.3-7.516a1.125,1.125,0,0,1,1.624,0l.541.558a1.208,1.208,0,0,1,0,1.674Z" transform="translate(-2.208 -4.207)" fill="%23fff"/></svg>') no-repeat center;
+}
+.vehicleAccordian.search-box .list-group .accordion .accordion-item .forms label {
+  color: #555555;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.vehicleAccordian.search-box .list-group .accordion .accordion-item .forms .form-control {
+  height: 40px;
+  margin: 0;
+}
+
+.vechileBrands {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.vechileBrands li {
+  border: 2px solid #e6e6e6;
+  border-radius: 3px;
+  height: 60px;
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  padding: 5px;
+}
+.vechileBrands li:hover {
+  border-color: #f6931e;
+}
+.vechileBrands li img {
+  max-width: 100%;
+}
+
+.filterResult {
+  margin-top: 15px;
+}
+.filterResult .badge {
+  background-color: #F7F7F7;
+  padding: 10px;
+  padding-left: 20px;
+  color: #161615 !important;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: normal;
+  font-size: 14px;
+}
+.filterResult .badge img {
+  margin-left: 10px;
+}
+
+.form-gap {
+  gap: 15px;
+}
+
+.form-control.box {
+  width: 50px;
+}
+
 .table thead {
   background: #F7F7F7;
 }
@@ -15482,7 +15887,6 @@ main {
 .table th,
 .table td {
   vertical-align: middle;
-  white-space: nowrap;
 }
 .table a {
   color: #287AD9;
@@ -15492,7 +15896,6 @@ main {
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
 }
 .table .checkbox-button__control {
   -webkit-transform: scale(0.75);
@@ -15710,5 +16113,175 @@ main {
 
 .tableButtons {
   width: 320px;
+}
+
+/*USE CSS for Slider*/
+.vehicle-detail-banner .car-slider-desc {
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.banner-slider .slider.slider-for {
+  max-width: 84%;
+  padding-right: 35px;
+}
+
+.banner-slider .slider.slider-nav {
+  max-width: 16%;
+}
+
+.banner-slider .slider.slider-for,
+.banner-slider .slider.slider-nav {
+  width: 100%;
+  float: left;
+}
+
+.banner-slider .slider.slider-nav {
+  height: 340;
+  overflow: hidden;
+}
+
+.slider-banner-image {
+  height: 340;
+}
+
+.banner-slider .slider.slider-nav {
+  padding: 15px 0 0;
+}
+
+.slider-nav .slick-slide .thumbnail-image .thumbImg {
+  max-width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  border: 1px solid #ebebeb;
+}
+
+.slider-banner-image img,
+.slider-nav .slick-slide .thumbnail-image .thumbImg img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slick-vertical .slick-slide:active,
+.slick-vertical .slick-slide:focus,
+.slick-arrow:hover,
+.slick-arrow:focus {
+  border: 0;
+  outline: 0;
+}
+
+.slider-nav .slick-slide.slick-current.thumbnail-image .thumbImg {
+  border: 2px solid #196db6;
+}
+
+.slider-nav .slick-slide.slick-current span {
+  color: #196db6;
+}
+
+.slider-nav .slick-slide {
+  text-align: center;
+}
+
+.slider-nav .slick-slide span {
+  font-size: 14px;
+  display: block;
+  padding: 5px 0 15px;
+}
+
+.slick-arrow {
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.slick-prev {
+  top: 0;
+}
+
+.slick-next {
+  bottom: 0;
+  background-color: #fff;
+}
+
+.slick-prev.slick-arrow {
+  background-image: url(../images/black-up-arrow.png);
+}
+
+.slick-next.slick-arrow {
+  background-image: url(../images/black-down-arrow.png);
+}
+
+/*End USE CSS for Slider*/
+.banner-slider .slider.slider-for,
+.banner-slider .slider.slider-nav {
+  max-width: 100%;
+  float: none;
+}
+
+.banner-slider .slider.slider-for {
+  padding-right: 0;
+}
+
+.banner-slider .slider.slider-nav {
+  height: auto;
+}
+
+.slider-banner-image {
+  height: 340px;
+}
+
+.slider-nav .slick-slide span {
+  padding: 5px 0;
+}
+
+.slick-arrow {
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  bottom: 0;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+  -ms-transform: translateY(-50%) rotate(-90deg);
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+.slick-prev {
+  left: 0;
+  right: unset;
+}
+
+.slick-next {
+  left: unset;
+  right: 0;
+  background-color: transparent;
+}
+
+.vehicle-detail-banner .car-slider-desc {
+  max-width: 340px;
+}
+
+.bid-tag {
+  padding: 10px 0 15px;
+}
+
+.slider.slider-nav.thumb-image {
+  white-space: nowrap;
+}
+
+.thumbnail-image.slick-slide {
+  padding: 0px 5px;
+  min-width: 75px;
+  display: inline-block;
+  float: none;
 }
 /*# sourceMappingURL=custom.css.map */
