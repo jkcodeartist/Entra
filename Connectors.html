@@ -1,146 +1,187 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <title>Entra</title>
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-  <title>Entra</title>
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link href="assets/css/developer.css" rel="stylesheet" />
+  </head>
 
-  <link href="assets/css/custom.css" rel="stylesheet">
-  <link href="assets/css/developer.css" rel="stylesheet">
+  <body>
+    <div class="wrapper h-100">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div id="nav-icon" class="burgermenu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <a class="navbar-brand" href="Connectors.html">
+            <img src="assets/images/logo.png" class="img-fluid" alt="" />
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Workspaces
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Role</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Reports</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-</head>
-
-<body>
-
-  <div class="wrapper h-100">
-
-    <header>
-
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div id="nav-icon" class="burgermenu">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <a class="navbar-brand" href="Connectors.html">
-          <img src="assets/images/logo.png" class="img-fluid" alt="">
-        </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Workspaces
+        <div class="user-actions navbar_right">
+          <div class="searchUsers">
+            <div class="form-group search-control">
+              <input type="text" placeholder="Search here…" />
+              <a href="#search">
+                <img src="assets/images/search.svg" alt="" />
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Role</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Reports</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <div class="user-actions navbar_right">
-
-        <div class="searchUsers">
-          <div class="form-group search-control">
-            <input type="text" placeholder="Search here…">
-            <a href="#search">
-              <img src="assets/images/search.svg" alt="">
-            </a>
-            <!-- RESPONSIVE SEARCH -->
-            <div id="search-box">
-              <div class="container">
-                <a class="close" href="#close"></a>
-                <div class="search-main">
-                  <div class="search-inner">
-                    <input type="text" id="inputSearch" name="firstname" placeholder="Search ">
-                    <button>
-                      <img src="assets/images/search.svg" alt="">
-                    </button>
+              <!-- RESPONSIVE SEARCH -->
+              <div id="search-box">
+                <div class="container">
+                  <a class="close" href="#close"></a>
+                  <div class="search-main">
+                    <div class="search-inner">
+                      <input
+                        type="text"
+                        id="inputSearch"
+                        name="firstname"
+                        placeholder="Search "
+                      />
+                      <button>
+                        <img src="assets/images/search.svg" alt="" />
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="userList">
+              <a href="#">
+                <img src="assets/images/user-1.png" alt="" />
+                <img src="assets/images/user-2.png" alt="" />
+                <img src="assets/images/user-3.png" alt="" />
+                <div class="total">+3</div>
+              </a>
+            </div>
+            <a href="#" class="btn btn-secondary btn-sm">Invite</a>
           </div>
-          <div class="userList">
-            <a href="#">
-              <img src="assets/images/user-1.png" alt="">
-              <img src="assets/images/user-2.png" alt="">
-              <img src="assets/images/user-3.png" alt="">
-              <div class="total">+3</div>
+
+          <div class="full-screen-icon">
+            <a href="#" id="btnFullscreen">
+              <img src="assets/images/full-screen.svg" alt="" />
             </a>
           </div>
-          <a href="#" class="btn btn-secondary btn-sm">Invite</a>
-        </div>
 
-        <div class="full-screen-icon">
-          <a href="#" id="btnFullscreen">
-            <img src="assets/images/full-screen.svg" alt="">
-          </a>
-        </div>
-
-        <div class="dropdown bellNotification">
-          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <img src="assets/images/bell.svg" alt="">
-            <span>8</span>
-          </a>
-          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
-            <div class="title">
-              <span>notifications</span>
-            </div>
-            <ul class="list-unstyled">
-              <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></li>
-              <li><a class="dropdown-item" href="#">Sed facilisis erat vel vulputate egestas</a></li>
-              <li><a class="dropdown-item" href="#">Cras blandit sapien nec vestibulum condimentum </a></li>
-            </ul>
-            <div class="title btn-viewAll">
-              <a href="#">View All Notifications </a>
+          <div class="dropdown bellNotification">
+            <a
+              class="dropdown-toggle"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="assets/images/bell.svg" alt="" />
+              <span>8</span>
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="dropdownMenuLink"
+            >
+              <div class="title">
+                <span>notifications</span>
+              </div>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Sed facilisis erat vel vulputate egestas</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Cras blandit sapien nec vestibulum condimentum
+                  </a>
+                </li>
+              </ul>
+              <div class="title btn-viewAll">
+                <a href="#">View All Notifications </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="dropdown userDropdown">
-            <a class="userDetail dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <img src="assets/images/user-img.png" alt="">
+          <div class="dropdown userDropdown">
+            <a
+              class="userDetail dropdown-toggle"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="assets/images/user-img.png" alt="" />
               <span>
                 Mohammed Aldosari
                 <p>Technical Support</p>
               </span>
             </a>
-  
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+
+            <div
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="dropdownMenuLink"
+            >
               <div class="dropdown-profile">
-                <img src="assets/images/user-img.png" class="img-fluid" alt="">
+                <img
+                  src="assets/images/user-img.png"
+                  class="img-fluid"
+                  alt=""
+                />
                 <div>
                   <h2>Mohammed Aldosari</h2>
                   <p>Technical Support</p>
                   <a href="#">
-                    <img src="assets/images/email.svg" alt="">
+                    <img src="assets/images/email.svg" alt="" />
                     mohammed@hotmail.com
                   </a>
                   <a href="#">
-                    <img src="assets/images/location.svg" alt="">
+                    <img src="assets/images/location.svg" alt="" />
                     Riyadh, Saudi Arabia
                   </a>
                 </div>
@@ -148,13 +189,13 @@
               <div class="setting-profile">
                 <a href="#">
                   <span>
-                    <img src="assets/images/settings.svg" alt="">
+                    <img src="assets/images/settings.svg" alt="" />
                   </span>
                   Settiings
                 </a>
                 <a href="#">
                   <span>
-                    <img src="assets/images/log-history.svg" alt="">
+                    <img src="assets/images/log-history.svg" alt="" />
                   </span>
                   Login History
                 </a>
@@ -162,257 +203,295 @@
               <div class="user-controls">
                 <a href="Profile.html">
                   <span>
-                    <img src="assets/images/log-history.svg" alt="">
+                    <img src="assets/images/log-history.svg" alt="" />
                   </span>
                   Edit Profile
                 </a>
                 <a href="Auth.html">
                   <span>
-                    <img src="assets/images/log-history.svg" alt="">
+                    <img src="assets/images/log-history.svg" alt="" />
                   </span>
                   Log Out
                 </a>
               </div>
             </div>
           </div>
+        </div>
+      </header>
 
-      </div>
-
-    </header>
-
-
-
-    <main>
-
-      <aside>
-        <a href="Connectors.html" class="active">
-          <img src="assets/images/connector.svg" alt="">
-          <span>Connector’s</span>
-        </a>
-        <a href="APIs.html">
-          <img src="assets/images/apis.svg" alt="">
-          <span>APIs</span>
-        </a>
-        <a href="Users.html">
-          <img src="assets/images/user.svg" alt="">
-          <span>Users</span>
-        </a>
-        <a href="#">
-          <img src="assets/images/servers.svg" alt="">
-          <span>Mock Servers</span>
-        </a>
-        <a href="#">
-          <img src="assets/images/monitors.svg" alt="">
-          <span>Monitors</span>
-        </a>
-        <a href="#">
-          <img src="assets/images/history.svg" alt="">
-          <span>History</span>
-        </a>
-        <div class="d-xl-none">
-          <a href="#">
-            <i class="mdi mdi-home-outline"></i>
-            <span>Home</span>
+      <main>
+        <aside>
+          <a href="Connectors.html" class="active">
+            <img src="assets/images/connector.svg" alt="" />
+            <span>Connector’s</span>
           </a>
-          <div>
-            <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-              aria-controls="collapseExample">
-              <i class="mdi mdi-briefcase-outline"></i>
-              Workspaces
+          <a href="APIs.html">
+            <img src="assets/images/apis.svg" alt="" />
+            <span>APIs</span>
+          </a>
+          <a href="Employee-Creation.html">
+            <img src="assets/images/user.svg" alt="" />
+            <span>Users</span>
+          </a>
+          <a href="#">
+            <img src="assets/images/servers.svg" alt="" />
+            <span>Mock Servers</span>
+          </a>
+          <a href="#">
+            <img src="assets/images/monitors.svg" alt="" />
+            <span>Monitors</span>
+          </a>
+          <a href="#">
+            <img src="assets/images/history.svg" alt="" />
+            <span>History</span>
+          </a>
+          <div class="d-xl-none">
+            <a href="#">
+              <i class="mdi mdi-home-outline"></i>
+              <span>Home</span>
             </a>
-            <div class="collapse" id="collapseExample">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <div>
+              <a
+                data-bs-toggle="collapse"
+                href="#collapseExample"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                <i class="mdi mdi-briefcase-outline"></i>
+                Workspaces
+              </a>
+              <div class="collapse" id="collapseExample">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </div>
             </div>
+            <a href="#">
+              <i class="mdi mdi-account-multiple-outline"></i>
+              <span>Role</span>
+            </a>
+            <a href="#">
+              <i class="mdi mdi-file-chart-outline"></i>
+              <span>Reports</span>
+            </a>
           </div>
-          <a href="#">
-            <i class="mdi mdi-account-multiple-outline"></i>
-            <span>Role</span>
-          </a>
-          <a href="#">
-            <i class="mdi mdi-file-chart-outline"></i>
-            <span>Reports</span>
-          </a>
-        </div>
-      </aside>
+        </aside>
 
-      <div class="content-wrapper">
-        <div class="control-panel">
-          <div class="heading">
-            <h2 class="title">Connector’s</h2>
-            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#addConnector"> <i>+</i> Add
-              Connector</button>
-          </div>
-          <div class="search-box">
-            <input type="text" class="form-control" placeholder="Search" />
-            <div class="list-group">
-              <a href="#" class="list-group-item list-group-item-action active">
-                Recommended
-                <span>(15)</span>
-              </a>
-              <a href="#" class="list-group-item list-group-item-action">
-                Enterprise
-                <span>(3)</span>
-              </a>
-              <a href="#" class="list-group-item list-group-item-action">
-                Social Media
-                <span>(4)</span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <section class="main-wrapper">
-          <div class="breadcrumb-wrap">
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-              <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item"><a href="#">APIs</a></li>
-                <li class="breadcrumb-item"><a href="#">My Workspace</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Connectors</li>
-              </ol>
-            </nav>
-          </div>
-          <div class="contentPanel">
+        <div class="content-wrapper">
+          <div class="control-panel">
             <div class="heading">
-              <h2 class="title">API Connectors</h2>
+              <h2 class="title">Connector’s</h2>
+              <button
+                class="btn btn-primary btn-sm"
+                data-bs-toggle="modal"
+                data-bs-target="#addConnector"
+              >
+                <i>+</i> Add Connector
+              </button>
             </div>
-            <div class="main-content">
-              <div class="list-unstyled apiListCard">
-                <a href="Connectors-Detail.html">
-                  <img src="assets/images/b1.png" alt="" class="img-fluid">
-                  <span>Client Connector</span>
+            <div class="search-box">
+              <input type="text" class="form-control" placeholder="Search" />
+              <div class="list-group">
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action active"
+                >
+                  Recommended
+                  <span>(15)</span>
                 </a>
-                <a href="Connectors-Detail.html">
-                  <img src="assets/images/b2.png" alt="" class="img-fluid">
-                  <span>Camping Monitor</span>
+                <a href="#" class="list-group-item list-group-item-action">
+                  Enterprise
+                  <span>(3)</span>
                 </a>
-                <a href="Connectors-Detail.html">
-                  <img src="assets/images/b3.png" alt="" class="img-fluid">
-                  <span>Sales Force</span>
-                </a>
-                <a href="Connectors-Detail.html">
-                  <img src="assets/images/b4.png" alt="" class="img-fluid">
-                  <span>Client Connector</span>
-                </a>
-                <a href="Connectors-Detail.html">
-                  <img src="assets/images/b5.png" alt="" class="img-fluid">
-                  <span>Client Connector</span>
-                </a>
-                <a href="Connectors-Detail.html">
-                  <img src="assets/images/b6.png" alt="" class="img-fluid">
-                  <span>Camping Monitor</span>
-                </a>
-                <a href="Connectors-Detail.html">
-                  <img src="assets/images/b7.png" alt="" class="img-fluid">
-                  <span>Sales Force</span>
-                </a>
-                <a href="Connectors-Detail.html">
-                  <img src="assets/images/b8.png" alt="" class="img-fluid">
-                  <span>Client Connector</span>
-                </a>
-                <a href="Connectors-Detail.html">
-                  <img src="assets/images/b9.png" alt="" class="img-fluid">
-                  <span>Client Connector</span>
-                </a>
-                <a href="Connectors-Detail.html">
-                  <img src="assets/images/b10.png" alt="" class="img-fluid">
-                  <span>Camping Monitor</span>
-                </a>
-                <a href="Connectors-Detail.html">
-                  <img src="assets/images/b11.png" alt="" class="img-fluid">
-                  <span>Sales Force</span>
-                </a>
-                <a href="Connectors-Detail.html">
-                  <img src="assets/images/b12.png" alt="" class="img-fluid">
-                  <span>Client Connector</span>
-                </a>
-                <a href="Connectors-Detail.html">
-                  <img src="assets/images/b4.png" alt="" class="img-fluid">
-                  <span>Client Connector</span>
-                </a>
-                <a href="Connectors-Detail.html">
-                  <img src="assets/images/b5.png" alt="" class="img-fluid">
-                  <span>Client Connector</span>
-                </a>
-                <a href="Connectors-Detail.html">
-                  <img src="assets/images/b6.png" alt="" class="img-fluid">
-                  <span>Camping Monitor</span>
+                <a href="#" class="list-group-item list-group-item-action">
+                  Social Media
+                  <span>(4)</span>
                 </a>
               </div>
             </div>
           </div>
-        </section>
-      </div>
 
-
-    </main>
-
-
-  </div>
-
-
-  <!-- Connector Modal -->
-  <div class="modal fade" id="addConnector" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="addConnectorLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="addConnectorLabel">Add Connector</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <section class="main-wrapper">
+            <div class="breadcrumb-wrap">
+              <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item"><a href="#">APIs</a></li>
+                  <li class="breadcrumb-item"><a href="#">My Workspace</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Connectors
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <div class="contentPanel">
+              <div class="heading">
+                <h2 class="title">API Connectors</h2>
+              </div>
+              <div class="main-content">
+                <div class="list-unstyled apiListCard">
+                  <a href="Connectors-Detail.html">
+                    <img src="assets/images/b1.png" alt="" class="img-fluid" />
+                    <span>Client Connector</span>
+                  </a>
+                  <a href="Connectors-Detail.html">
+                    <img src="assets/images/b2.png" alt="" class="img-fluid" />
+                    <span>Camping Monitor</span>
+                  </a>
+                  <a href="Connectors-Detail.html">
+                    <img src="assets/images/b3.png" alt="" class="img-fluid" />
+                    <span>Sales Force</span>
+                  </a>
+                  <a href="Connectors-Detail.html">
+                    <img src="assets/images/b4.png" alt="" class="img-fluid" />
+                    <span>Client Connector</span>
+                  </a>
+                  <a href="Connectors-Detail.html">
+                    <img src="assets/images/b5.png" alt="" class="img-fluid" />
+                    <span>Client Connector</span>
+                  </a>
+                  <a href="Connectors-Detail.html">
+                    <img src="assets/images/b6.png" alt="" class="img-fluid" />
+                    <span>Camping Monitor</span>
+                  </a>
+                  <a href="Connectors-Detail.html">
+                    <img src="assets/images/b7.png" alt="" class="img-fluid" />
+                    <span>Sales Force</span>
+                  </a>
+                  <a href="Connectors-Detail.html">
+                    <img src="assets/images/b8.png" alt="" class="img-fluid" />
+                    <span>Client Connector</span>
+                  </a>
+                  <a href="Connectors-Detail.html">
+                    <img src="assets/images/b9.png" alt="" class="img-fluid" />
+                    <span>Client Connector</span>
+                  </a>
+                  <a href="Connectors-Detail.html">
+                    <img src="assets/images/b10.png" alt="" class="img-fluid" />
+                    <span>Camping Monitor</span>
+                  </a>
+                  <a href="Connectors-Detail.html">
+                    <img src="assets/images/b11.png" alt="" class="img-fluid" />
+                    <span>Sales Force</span>
+                  </a>
+                  <a href="Connectors-Detail.html">
+                    <img src="assets/images/b12.png" alt="" class="img-fluid" />
+                    <span>Client Connector</span>
+                  </a>
+                  <a href="Connectors-Detail.html">
+                    <img src="assets/images/b4.png" alt="" class="img-fluid" />
+                    <span>Client Connector</span>
+                  </a>
+                  <a href="Connectors-Detail.html">
+                    <img src="assets/images/b5.png" alt="" class="img-fluid" />
+                    <span>Client Connector</span>
+                  </a>
+                  <a href="Connectors-Detail.html">
+                    <img src="assets/images/b6.png" alt="" class="img-fluid" />
+                    <span>Camping Monitor</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-        <div class="modal-body">
-          <form>
-            <div class="modal-form">
-              <div class="controls mb-3">
-                <label class="form-label">Connector Name</label>
-                <input type="text" class="form-control" placeholder="Fetch information about a given repository">
-              </div>
-              <div class="controls mb-3">
-                <label class="form-label">Connector Description</label>
-                <textarea class="form-control" name="Description" id="Description" cols="8" rows="5"
-                  placeholder="Authentication"></textarea>
-              </div>
-              <div class="controls">
-                <label class="form-label">Connector Icon</label>
-                <div class="form-group">
-                  <div class="dropzone-wrapper">
-                    <div class="dropzone-desc">
-                      <img src="assets/images/upload.svg" alt="">
-                      <p>Drop files to upload or <span class="browseLink">Browse</span></p>
-                    </div>
-                    <input type="file" name="img_logo" class="dropzone">
-                  </div>
-                  <div class="preview-zone hidden">
-                    <div class="box box-solid">
-                      <div class="box-body">
+      </main>
+    </div>
+
+    <!-- Connector Modal -->
+    <div
+      class="modal fade"
+      id="addConnector"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="addConnectorLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addConnectorLabel">Add Connector</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="modal-form">
+                <div class="controls mb-3">
+                  <label class="form-label">Connector Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Fetch information about a given repository"
+                  />
+                </div>
+                <div class="controls mb-3">
+                  <label class="form-label">Connector Description</label>
+                  <textarea
+                    class="form-control"
+                    name="Description"
+                    id="Description"
+                    cols="8"
+                    rows="5"
+                    placeholder="Authentication"
+                  ></textarea>
+                </div>
+                <div class="controls">
+                  <label class="form-label">Connector Icon</label>
+                  <div class="form-group">
+                    <div class="dropzone-wrapper">
+                      <div class="dropzone-desc">
+                        <img src="assets/images/upload.svg" alt="" />
+                        <p>
+                          Drop files to upload or
+                          <span class="browseLink">Browse</span>
+                        </p>
                       </div>
-                      <button type="button" class="btn remove-preview p-0">
-                        <img src="assets/images/delete.svg" alt="">
-                      </button>
+                      <input type="file" name="img_logo" class="dropzone" />
+                    </div>
+                    <div class="preview-zone hidden">
+                      <div class="box box-solid">
+                        <div class="box-body"></div>
+                        <button type="button" class="btn remove-preview p-0">
+                          <img src="assets/images/delete.svg" alt="" />
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-primary px-4">Add Connector</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="button" class="btn btn-primary px-4">
+              Add Connector
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/custom.js"></script>
-
-
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
 </html>

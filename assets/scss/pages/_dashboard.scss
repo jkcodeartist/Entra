@@ -1336,6 +1336,9 @@ main {
     gap: 20px;
     border-radius: 3px;
     padding: 0 10px 0 0;
+    &:hover {
+      border-color: $primary;
+    }
     .box-desc {
       width: 100%;
       display: flex;
@@ -1358,6 +1361,7 @@ main {
       object-fit: cover;
       border-top-left-radius: 3px;
       border-bottom-left-radius: 3px;
+      cursor: pointer;
     }
   }
 }
@@ -1370,6 +1374,9 @@ main {
   .cardBox {
     border: 1px solid #e6e6e6;
     border-radius: 3px;
+    &:hover {
+      border-color: $primary;
+    }
   }
 
   .carImg {
@@ -1378,6 +1385,7 @@ main {
     object-fit: cover;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+    cursor: pointer;
   }
 
   .box-desc {
@@ -1397,5 +1405,18 @@ main {
     span {
       display: flex;
     }
+  }
+}
+
+.gallerSlider{
+  .modal-body{
+    overflow: initial;
+  }
+  .modal-header{
+    position: absolute;
+    padding: 15px;
+    right: 0;
+    top: 0;
+    z-index: 99;
   }
 }

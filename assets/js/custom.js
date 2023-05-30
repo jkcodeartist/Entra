@@ -243,3 +243,7 @@ $(".slider-nav").slick({
     },
   ],
 });
+
+$(".gallerSlider .slider-nav").slick({
+  slidesToShow: 5,
+});

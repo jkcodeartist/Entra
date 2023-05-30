@@ -7,10 +7,7 @@
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
     <title>Entra</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-    />
+    <link rel="stylesheet" href="assets/css/slick.min.css" />
     <link href="assets/css/custom.css" rel="stylesheet" />
     <link href="assets/css/developer.css" rel="stylesheet" />
   </head>
@@ -233,7 +230,7 @@
             <img src="assets/images/apis.svg" alt="" />
             <span>APIs</span>
           </a>
-          <a href="Users.html">
+          <a href="Employee-Creation.html">
             <img src="assets/images/user.svg" alt="" />
             <span>Users</span>
           </a>
@@ -961,6 +958,8 @@
                       src="assets/images/car1.png"
                       class="img-fluid carImg"
                       alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#addImage"
                     />
                     <div class="box-desc">
                       <div>
@@ -997,6 +996,8 @@
                       src="assets/images/car2.png"
                       class="img-fluid carImg"
                       alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#addImage"
                     />
                     <div class="box-desc">
                       <div>
@@ -1031,7 +1032,13 @@
                 </div>
                 <div class="columnView">
                   <div class="cardBox">
-                    <img src="assets/images/car1.png" class="carImg" alt="" />
+                    <img
+                      src="assets/images/car1.png"
+                      class="carImg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#addImage"
+                    />
                     <div class="box-desc">
                       <div class="d-flex justify-content-between">
                         <h4>Tesla Model 3</h4>
@@ -1064,7 +1071,13 @@
                     </div>
                   </div>
                   <div class="cardBox">
-                    <img src="assets/images/car1.png" class="carImg" alt="" />
+                    <img
+                      src="assets/images/car1.png"
+                      class="carImg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#addImage"
+                    />
                     <div class="box-desc">
                       <div class="d-flex justify-content-between">
                         <h4>Tesla Model 3</h4>
@@ -1097,7 +1110,13 @@
                     </div>
                   </div>
                   <div class="cardBox">
-                    <img src="assets/images/car1.png" class="carImg" alt="" />
+                    <img
+                      src="assets/images/car1.png"
+                      class="carImg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#addImage"
+                    />
                     <div class="box-desc">
                       <div class="d-flex justify-content-between">
                         <h4>Tesla Model 3</h4>
@@ -1130,7 +1149,13 @@
                     </div>
                   </div>
                   <div class="cardBox">
-                    <img src="assets/images/car1.png" class="carImg" alt="" />
+                    <img
+                      src="assets/images/car1.png"
+                      class="carImg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#addImage"
+                    />
                     <div class="box-desc">
                       <div class="d-flex justify-content-between">
                         <h4>Tesla Model 3</h4>
@@ -1163,7 +1188,13 @@
                     </div>
                   </div>
                   <div class="cardBox">
-                    <img src="assets/images/car1.png" class="carImg" alt="" />
+                    <img
+                      src="assets/images/car1.png"
+                      class="carImg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#addImage"
+                    />
                     <div class="box-desc">
                       <div class="d-flex justify-content-between">
                         <h4>Tesla Model 3</h4>
@@ -1203,9 +1234,110 @@
       </main>
     </div>
 
+    <div
+      class="modal gallerSlider fade"
+      id="addImage"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="addConnectorLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="banner-section">
+              <div class="vehicle-detail-banner banner-content clearfix">
+                <div class="banner-slider">
+                  <div class="slider slider-for">
+                    <div class="slider-banner-image">
+                      <img src="assets/images/car1.png" alt="Car-Image" />
+                    </div>
+                    <div class="slider-banner-image">
+                      <img src="assets/images/car2.png" alt="Car-Image" />
+                    </div>
+                    <div class="slider-banner-image">
+                      <img src="assets/images/car3.png" alt="Car-Image" />
+                    </div>
+                    <div class="slider-banner-image">
+                      <img src="assets/images/car4.png" alt="Car-Image" />
+                    </div>
+                    <div class="slider-banner-image">
+                      <img src="assets/images/car5.png" alt="Car-Image" />
+                    </div>
+                    <div class="slider-banner-image">
+                      <img src="assets/images/car6.png" alt="Car-Image" />
+                    </div>
+                    <div class="slider-banner-image">
+                      <img src="assets/images/car7.png" alt="Car-Image" />
+                    </div>
+                    <div class="slider-banner-image">
+                      <img src="assets/images/car8.png" alt="Car-Image" />
+                    </div>
+                  </div>
+                  <div class="slider slider-nav thumb-image">
+                    <div class="thumbnail-image">
+                      <div class="thumbImg">
+                        <img src="assets/images/car1.png" alt="slider-img" />
+                      </div>
+                    </div>
+                    <div class="thumbnail-image">
+                      <div class="thumbImg">
+                        <img src="assets/images/car2.png" alt="slider-img" />
+                      </div>
+                    </div>
+                    <div class="thumbnail-image">
+                      <div class="thumbImg">
+                        <img src="assets/images/car3.png" alt="slider-img" />
+                      </div>
+                    </div>
+                    <div class="thumbnail-image">
+                      <div class="thumbImg">
+                        <img src="assets/images/car4.png" alt="slider-img" />
+                      </div>
+                    </div>
+                    <div class="thumbnail-image">
+                      <div class="thumbImg">
+                        <img src="assets/images/car5.png" alt="slider-img" />
+                      </div>
+                    </div>
+                    <div class="thumbnail-image">
+                      <div class="thumbImg">
+                        <img src="assets/images/car6.png" alt="slider-img" />
+                      </div>
+                    </div>
+                    <div class="thumbnail-image">
+                      <div class="thumbImg">
+                        <img src="assets/images/car7.png" alt="slider-img" />
+                      </div>
+                    </div>
+                    <div class="thumbnail-image">
+                      <div class="thumbImg">
+                        <img src="assets/images/car8.png" alt="slider-img" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/custom.js"></script>
 
     <!-- DC Syntax Highligher JS -->
@@ -1235,7 +1367,7 @@
     </script>
     <script>
       $(".columnView").hide();
-        $(".rowSelect").addClass("active");
+      $(".rowSelect").addClass("active");
       $(".rowSelect").click(function () {
         $(".columnView").hide();
         $(".rowView").show();

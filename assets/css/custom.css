@@ -15905,6 +15905,9 @@ main {
   border-radius: 3px;
   padding: 0 10px 0 0;
 }
+.rowView .box:hover {
+  border-color: #f6931e;
+}
 .rowView .box .box-desc {
   width: 100%;
   display: -webkit-box;
@@ -15934,6 +15937,7 @@ main {
      object-fit: cover;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
+  cursor: pointer;
 }
 
 .columnView {
@@ -15945,6 +15949,9 @@ main {
   border: 1px solid #e6e6e6;
   border-radius: 3px;
 }
+.columnView .cardBox:hover {
+  border-color: #f6931e;
+}
 .columnView .carImg {
   width: 100%;
   height: 180px;
@@ -15952,6 +15959,7 @@ main {
      object-fit: cover;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+  cursor: pointer;
 }
 .columnView .box-desc {
   width: 100%;
@@ -15972,6 +15980,17 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.gallerSlider .modal-body {
+  overflow: initial;
+}
+.gallerSlider .modal-header {
+  position: absolute;
+  padding: 15px;
+  right: 0;
+  top: 0;
+  z-index: 99;
 }
 
 .table thead {
