@@ -15993,6 +15993,102 @@ main {
   z-index: 99;
 }
 
+.vehicleHistory .v-details label,
+.vehicleHistory .v-details strong {
+  font-size: 14px;
+  display: block;
+}
+
+.flowCart {
+  background: url(../images/bg-history.svg) no-repeat;
+  background-size: 100% 100%;
+}
+.flowCart ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.flowCart ul.even {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.flowCart ul.last {
+  padding-left: 70px;
+  position: relative;
+  top: -20px;
+}
+.flowCart ul.last li:last-child {
+  margin: 0;
+}
+.flowCart li {
+  margin-bottom: 20px;
+  margin-right: 50px;
+  text-align: center;
+}
+.flowCart li * {
+  font-size: 12px;
+}
+.flowCart li label {
+  display: block;
+}
+.flowCart li.start .circle {
+  width: 136px;
+  height: 136px;
+  border: 19px solid #287ad9;
+}
+.flowCart li.end .circle {
+  border-color: #999999 !important;
+}
+.flowCart li .circle {
+  width: 97px;
+  height: 97px;
+  border: 7px solid #287ad9;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  margin: 10px auto 0;
+}
+.flowCart li .circle svg {
+  height: 28px;
+  margin-top: 5px;
+}
+.flowCart li.green .circle {
+  border-color: #689316 !important;
+}
+.flowCart li.red .circle {
+  border-color: #e82424 !important;
+}
+.flowCart li.yellow .circle {
+  border-color: #f6931f !important;
+}
+.flowCart li.purple .circle {
+  border-color: #7832c9 !important;
+}
+.flowCart li.lime .circle {
+  border-color: #69ac9f !important;
+}
+
 .table thead {
   background: #F7F7F7;
 }

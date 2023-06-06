@@ -1408,15 +1408,113 @@ main {
   }
 }
 
-.gallerSlider{
-  .modal-body{
+.gallerSlider {
+  .modal-body {
     overflow: initial;
   }
-  .modal-header{
+  .modal-header {
     position: absolute;
     padding: 15px;
     right: 0;
     top: 0;
     z-index: 99;
+  }
+}
+
+.vehicleHistory {
+  .v-details {
+    label,
+    strong {
+      font-size: 14px;
+      display: block;
+    }
+  }
+}
+
+.flowCart {
+  background: url(../images/bg-history.svg) no-repeat;
+  background-size: 100% 100%;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    &.even {
+      justify-content: center;
+    }
+    &.last {
+      padding-left: 70px;
+      position: relative;
+      top: -20px;
+      li {
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+  li {
+    margin-bottom: 20px;
+    margin-right: 50px;
+    * {
+      font-size: 12px;
+    }
+    text-align: center;
+    label {
+      display: block;
+    }
+    &.start {
+      .circle {
+        width: 136px;
+        height: 136px;
+        border: 19px solid #287ad9;
+      }
+    }
+    &.end {
+      .circle {
+        border-color: #999999 !important;
+      }
+    }
+    .circle {
+      width: 97px;
+      height: 97px;
+      border: 7px solid #287ad9;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: $white;
+      margin: 10px auto 0;
+      svg {
+        height: 28px;
+        margin-top: 5px;
+      }
+    }
+    &.green {
+      .circle {
+        border-color: #689316 !important;
+      }
+    }
+    &.red {
+      .circle {
+        border-color: #e82424 !important;
+      }
+    }
+    &.yellow {
+      .circle {
+        border-color: #f6931f !important;
+      }
+    }
+    &.purple {
+      .circle {
+        border-color: #7832c9 !important;
+      }
+    }
+    &.lime {
+      .circle {
+        border-color: #69ac9f !important;
+      }
+    }
   }
 }
